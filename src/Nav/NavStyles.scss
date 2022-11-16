@@ -1,0 +1,112 @@
+.nav-container{
+    position: sticky;
+    top: 0;
+    img{
+        margin-top: 5rem;
+        width: 9rem;
+        height: 9rem;
+    }
+}
+
+.deskopt-nav{
+    .nav{
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+        h1{
+            font-weight: 10;
+        }
+        li{
+            color: #685540;
+        }
+    }
+}
+.mobile-nav{
+    flex-direction: row;
+    width: 100vw;
+    z-index: 2;
+    padding: 1rem 1.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    display: none;
+    .logo-container{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        width: fit-content;
+        justify-self: center;
+    }
+    .nav{
+        margin: -1rem -1.5rem;
+        position: absolute;
+        width: 100vw;
+        top: 0;
+        background-color: #685540;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: rgb(221, 216, 190);
+        overflow: hidden;
+        z-index: -1;
+        li{
+            margin: 1rem;
+        }
+    }
+    .nav.open{
+        display: flex;
+        animation-name: roll-down;
+        animation-duration: 0.5s;
+        height: 100vh;
+        width: 100vw;
+    }
+    .nav.closed{
+        height: 0;
+        animation-name: roll-up;
+        animation-duration: 0.5s;
+    }
+
+    .nav-btn {
+        width: 36px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .nav-btn:before,
+    .nav-btn:after {
+        background-color: #fff;
+        content: '';
+        display: block;
+        height: 4px;
+        transition: all 200ms ease-in-out;
+    }
+    .nav-btn:before {
+        box-shadow: 0 10px 0 #fff;
+        margin-bottom: 16px;
+    }
+    .nav-btn.open:before {
+        box-shadow: 0 0 0 #fff;
+        transform: translateY(10px) rotate(45deg);
+    }
+    .nav-btn.open:after{
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    @keyframes roll-down {
+        0%   {height: 0}
+        100% {height: 100vh;}
+      }
+    @keyframes roll-up {
+    0%   {height: 100vh}
+    100% {height: 0;}
+    }
+
+}
+
+@media (max-width: 800px) {
+    .deskopt-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: flex;
+    }
+}

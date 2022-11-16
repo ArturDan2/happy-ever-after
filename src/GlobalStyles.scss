@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  li{
+    list-style-type: none;
+  }
+
+  .flex-col{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .space-between{
+    justify-content: space-between;
+  }
+
+  .space-around{
+    justify-content: space-around;
+  }
+
+  .app-container{
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
