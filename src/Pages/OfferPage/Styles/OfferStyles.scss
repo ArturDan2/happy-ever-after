@@ -10,16 +10,19 @@
         display: flex;
         flex-direction: row;
         gap: 5rem;
+        position: relative;
+        transition: all 0.5s ease;
         .picture-container{
-            background-color: red;
+            background-color: beige;
             width: 40%;
-            height: 25rem;
+            height: 20rem;
         }
         .text-container{
             width: 70%;
             display: flex;
             flex-direction: column;
             gap: 1.2rem;
+            justify-content: space-around;
             h3{
                 font-size: 2.2rem;
             }
@@ -37,15 +40,70 @@
         }
     }
     .expandable-list{
-        margin-left: 1.5rem;
-        overflow: hidden;
-        transition: all 0.2s ease;
+        height: 100%;
+        li{
+            padding: 0.5rem;
+            color: grey;
+        }
     }
     .expandable-list.unexpanded{
-        height: 0;
+        font-size: 0;
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        transition: 
+            opacity .25s, 
+            margin .5s 0.25s, 
+            font-size .5s 0.25s, 
+            padding .5s .25s;
     }
     .expandable-list.expanded{
-        height: 100%;
+        font-size: 16px;
+        opacity: 1;
+        height: auto;
+        padding: 5px 0;
+        
+        /* grow, then fade in */
+        transition:   
+          margin .25s,
+          padding .25s,
+          font-size .25s,
+          opacity .5s .25s;
     }
+    }
+    @media (max-width: 1150px){
+        margin: 10rem 4rem;
+    }
+    @media (max-width: 1000px){
+        margin: 10rem 2rem;
+        .offer-section{
+            gap: 3rem;
+            .text-container{
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    line-height: 1.4rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 1000px){
+        margin: 10rem 4rem;
+        .offer-section{
+            flex-direction: column;
+            .text-container{
+                width: 100%;
+            }
+            .picture-container{
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 550px){
+        margin: 10rem 2rem;
+    }
+    @media (max-width: 370px){
+        margin: 10rem 1rem;
     }
 }

@@ -5,7 +5,7 @@ import "./Styles/AboutMeStyles.scss"
 
 const AboutMePage = () => {
   return (
-    <div className='main-container'>
+    <div className='main-aboutme'>
         <div className="heading">
             <h2>Kim jestem?</h2>
             <div className='pic-container'>
