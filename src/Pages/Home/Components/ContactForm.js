@@ -8,7 +8,7 @@ const ContactForm = () => {
             <div className='heading-content flex-col space-between'>
                 <div className='heading flex-col'>
                     <h2>Masz pytania?</h2>
-                    <h3>Skontaktuj się ze mną!</h3>
+                    <h2 className='bold'>Skontaktuj się ze mną!</h2>
                 </div>
                 <div className='icons flex-row'>
                     <p>I</p>

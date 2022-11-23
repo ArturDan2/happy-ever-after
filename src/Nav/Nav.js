@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import './NavStyles.scss'
-import logo from "../images/logo.png"
+import logo from "../images/logo_simplified3.png"
 
-const Nav = () => {
+const Nav = ({navVisible}) => {
 
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="nav-container">
+    <div className={`nav-container ${navVisible ? "visible" : "hidden"}`}>
       <div className="deskopt-nav">
         <ul className="flex-row space-around nav">
             <li>Home</li>

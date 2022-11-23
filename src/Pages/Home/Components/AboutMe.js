@@ -2,12 +2,21 @@ import React from 'react';
 import me from '../../../images/me.jpeg'
 //roturer
 import { Link } from 'react-router-dom';
+import { useInView } from "react-intersection-observer";
 
-const AboutMe = () => {
+const AboutMe = ({navVisible, setNavVisible}) => {
+
+
+  const [element, view] = useInView({threshold: 0.9, triggerOnce: true})
+
+  if(view === true){
+    setNavVisible(true)
+  }
+
   return (
-    <div className="aboutme-container">
+    <div ref={element} view={view} className="aboutme-container">
         <div className='flex-col text-container'>
-            <h2>O mnie</h2>
+            <h2 className='bold'>O mnie</h2>
             <p>Połączenie mojej romantycznej duszy ze skłonnością do perfekcyjnego planowania wszystkiego z
 najdrobniejszymi szczegółami sprawia, że mogę z dumą powiedzieć, iż jestem dobra w tym, co robię.
 Otaczanie się Waszą miłością i szczęściem daje mi wielką radość oraz motywację do pracy i nieustannego

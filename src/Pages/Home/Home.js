@@ -9,11 +9,12 @@ import ContactForm from './Components/ContactForm';
 
 
 
-const Home = () => {
+const Home = ({navVisible, setNavVisible}) => {
+
   return (
     <div className='home-container'>
       <Opening></Opening>
-      <AboutMe></AboutMe>
+      <AboutMe navVisible={navVisible} setNavVisible={setNavVisible}></AboutMe>
       <Offer></Offer>
       <MyStyle></MyStyle>
       <MyWorkPattern></MyWorkPattern>

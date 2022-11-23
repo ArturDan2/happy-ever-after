@@ -76,6 +76,12 @@ button{
             line-height: 1.6rem;
         }
     }
+
+    .aboutme-container{
+        h2{
+            font-family: 'Oranienbaum', serif;
+        }
+    }
     .pic-container{
         display: flex;
         justify-content: center;
@@ -422,7 +428,7 @@ button{
                 width: 80%;
                 padding-right: 2rem;
             }
-            h3{
+            h2.bold{
                 font-size: 51.3px;
                 width: 80%;
             }
@@ -500,7 +506,7 @@ button{
             transform: translateX(-50%);
             width: 100%;
             text-align: start;
-            h3{
+            h2.bold{
                 width: 100%;
             }
             h2{
@@ -547,7 +553,7 @@ button{
             h2{
                 font-size: 2rem;
             }
-            h3{
+            h2.bold{
                 font-size: 3rem;
             }
         }
@@ -559,7 +565,7 @@ button{
             h2{
                 font-size: 2rem;
             }
-            h3{
+            h2.bold{
                 font-size: 3rem;
             }
         }
