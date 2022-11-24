@@ -11,19 +11,90 @@ button{
     width: 100%;
     height: 100vh;
     margin-top: -10vh;
-    // background-image: url(../../../images/home.jpeg);
+    background-image: url(../../../images/mainbackground.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    align-items: center;
-    justify-content: center;
+    background-size: cover;
+    animation-name: background-anim;
+    background-position: center;
+    animation-duration: 3s;
     h2{
+        font-family: 'Ms Madi', cursive;
         font-size: 5rem;
-        color: #F8F0DE;
+        // color: #ffffff;
     }
     h3{
         font-size: 1.8rem;
-        color: #F8F0DE;
+        // color: white;
         font-weight: 100;
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        position: absolute;
+        width: 33rem;
+        height: 33rem;
+    }
+    img.sub{
+        bottom: 1rem;
+    }
+    img.ring{
+        animation-name: ring-anim;
+        animation-duration: 2s;
+    }
+    img.twigs{
+        opacity: 0;
+        animation-name: twigs-anim;
+        animation-duration: 1.5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    img.text{
+        opacity: 0;
+        animation-name: text-anim;
+        animation-duration: 1.1s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+    }
+    .background-container{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.347);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @keyframes ring-anim {
+        0%   {opacity: 0;
+              transform: rotate(90deg) scale(0.9);
+            //   transform: scale(0.8);
+        }
+        100%  {opacity: 1;
+               transform: rotate(0deg) scale(1);
+            }
+    }
+    
+    @keyframes twigs-anim {
+        0%   {opacity: 0;
+              transform: scale(0.9);}
+        100%  {
+            opacity: 1;
+            transform: scale(1)}
+    }
+    
+    @keyframes text-anim {
+        0%   {opacity: 0; transform: scale(0.9)}
+        100%  {opacity: 1; transform: scale(1)}
+    }
+
+    @keyframes background-anim {
+        0%   {transform: scale(1.2)}
+        100%  {transform: scale(1)}
     }
 
     @media (max-width: 800px) {
@@ -145,6 +216,14 @@ button{
 .aboutme-container h2{
     color: #685540;
 }
+.aboutme-container button{
+    border: 1px solid #606060;
+    color: #685540;
+}
+.aboutme-container button:hover{
+    background-color: #606060;
+    color: white;
+}
 .workpattern-container{
     h2{
         color: #F6B49B;
@@ -152,6 +231,10 @@ button{
     button{
         color:#D4734F;
         border-color: #D4734F;
+    }
+    button:hover{
+        background-color: #D4734F;
+        color: white;
     }
     @media (max-width: 750px) {
         flex-direction: column;
@@ -165,7 +248,9 @@ button{
     .background-container{
         width: 100%;
         height: 100vh;
-        background-image: url(../../../images/offerbackground.jpg);
+        background-image: url(../../../images/offerbackground2.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
         opacity: 79%;
         justify-content: center;
         div{
@@ -184,6 +269,11 @@ button{
             button{
                 width: 20%;
                 border-color: #231F20;
+                transition: background 0.5s ease;
+            }
+            button:hover{
+                background-color: #231F20;
+                color: white;
             }
         }
     }
@@ -232,7 +322,7 @@ button{
 .mystyle-container{
     width: 100%;
     height: 100vh;
-    background-color: #DA8566;
+    background-color: #9D9A8E;
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -261,7 +351,7 @@ button{
        }
     }
     *{
-        color: #F8F0DE;
+        color: #ffffff;
     }
     .pic{
         background-color: white;
@@ -274,8 +364,12 @@ button{
     }
     button{
         height: 3rem;
-        border-color: #F8F0DE;
+        border-color: #ffffff;
         z-index: 1;
+    }
+    button:hover{
+        background-color: white;
+        color: #9D9A8E;
     }
     h2{
         text-align: center;
