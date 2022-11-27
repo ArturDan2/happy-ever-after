@@ -1,5 +1,5 @@
 import React from 'react';
-import workpatternpic from '../../../images/workpattern.png';
+import workpatternpic from '../../../images/work2.jpg';
 import { Link } from 'react-router-dom';
 
 const MyWorkPattern = () => {

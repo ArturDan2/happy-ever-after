@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import insta from "../../../svgs/insta.svg";
+import facebook from "../../../svgs/facebook.svg";
 
 const ContactForm = () => {
   return (
@@ -11,10 +13,8 @@ const ContactForm = () => {
                     <h2 className='bold'>Skontaktuj się ze mną!</h2>
                 </div>
                 <div className='icons flex-row'>
-                    <p>I</p>
-                    <p>I</p>
-                    <p>I</p>
-                    <p>I</p>
+                    <a target="_blank" href="https://www.instagram.com/happyeverafter_wedding/?igshid=YmMyMTA2M2Y%3D"><img src={insta}></img></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100087017143733"><img src={facebook}></img></a>
                 </div>
             </div>
         </div>

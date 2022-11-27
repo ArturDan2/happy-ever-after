@@ -1,7 +1,8 @@
 .nav-container{
     z-index: 10;
-    transform: translateY(0vh);
     top: 0;
+    transition: all 0.5s ease;
+    transform: translateY(0vh);
     .logo-container{
         background-color: white;
         padding: 0.3rem 1rem;
@@ -9,26 +10,25 @@
     img{
         height: 3rem;
     }
-    transition: all 0.5s ease;
-    animation-name: menu-down;
-    animation-duration: 4s;
+
     li{
         cursor: pointer;
         padding: 1rem;
     }
 }
-
+.nav-container.anim{
+    animation-name: menu-down;
+    animation-duration: 4s;
+}
 .nav-container.sticky{
     position: sticky;
     background-color: white;
-    transform: translateY(0vh);
     color: grey;
 }
 
 .nav-container.static{
     position: static;
     background-color: none;
-    transform: translateY(0vh);
     color: white;
 }
 // .nav-container.hidden{
@@ -56,6 +56,7 @@
         }
     }
 }
+
 .mobile-nav{
     height: 10vh;
     flex-direction: row;
