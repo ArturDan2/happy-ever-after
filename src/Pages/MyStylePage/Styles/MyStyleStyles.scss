@@ -1,6 +1,8 @@
 div.main-container{
   display: flex;
   flex-direction: column;
+  transform: translateY(20%);
+  opacity: 0;
   .pins{
     width: 100%;
     display: flex;

@@ -15,7 +15,17 @@ export const offers = [
                     'nadzór nad harmonogramem i realizacją prac',
                     'pomoc w wyborze podwykonawców',
                     'typowanie lokalizacji na przyjęcie weselne'
-                    ]
+                    ],
+        picture: "organizacja.jpg"
+    },
+    {
+        title: 'Częściowa organizacja ślubu i wesela',
+        paragraph: `Jeśli zorganizowaliście już większość elementów tego ważnego dnia, idealnym rozwiązaniem dla Was
+        będzie skorzystanie z usługi częściowej koordynacji ślubu. Wspólnie ustalimy, co już zostało zrobione i
+        zorganizujemy całą resztę.`, 
+        list_title: null,
+        list_items: [],
+        picture: "częściowa-organizacja.jpg"
     },
     {
         title: 'Typowanie lokalizacji na przyjęcie weselne',
@@ -30,7 +40,8 @@ export const offers = [
                     'wstępne zarezerwowanie terminu',
                     'wspólny rekonesans typowanych miejsc weselnych',
                     'rezerwacja wybranego przez Was miejsca na przyjęcie weselne',
-                    ]
+                    ],
+         picture: "miejsce.jpg"
     },
     {
         title: 'Koordynacja Dnia Ślubu i Wesela',
@@ -52,16 +63,7 @@ export const offers = [
                     `koordynację przyjęcia weselnego`,
                     `rozwiązywanie bieżących problemów oraz pomoc w trudnych i niespodziewanych sytuacjach`,
                     `ostateczne rozliczenia z podwykonawcami`
-                    ]
+                    ],
+        picture: "koordynacja.jpg"
     },
-    {
-        title: 'Koordynacja Dnia Ślubu i Wesela',
-        paragraph: `Oferta koordynacji ślubu i wesela może być odrębną usługą lub można z niej skorzystać w ramach
-        kompleksowej organizacji ślubu i wesela. W ramach tej usługi przygotujemy wspólnie scenariusz Dnia
-        Ślubu. Będę Wam towarzyszyć od początku porannych przygotowań do późnych godzin nocnych.
-        Zadbam o to, abyście w tym wyjątkowym dniu nie musieli się stresować i mogli cieszyć towarzystwem
-        najbliższych.`, 
-        list_title: null,
-        list_items: []
-    }
 ]

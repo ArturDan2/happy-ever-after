@@ -16,6 +16,7 @@
   body{
     overflow-x: hidden;
   }
+
   h2{
     font-family: 'Migra Extralight', serif;
     font-weight: 100;
@@ -58,4 +59,38 @@
 
   .app-container{
     max-width: 100vw;
+  }
+
+  .sub-page{
+    p{
+      text-align: justify;
+    }
+  }
+  .slide-in{
+    animation-name: slide-in;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
+    @keyframes slide-in {
+        0%{
+            transform: translateY(20%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slide-in {
+        0%{
+            transform: translateY(20%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
   }

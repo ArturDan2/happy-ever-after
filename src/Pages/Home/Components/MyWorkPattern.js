@@ -1,10 +1,14 @@
 import React from 'react';
-import workpatternpic from '../../../images/work2.jpg';
+import workpatternpic from '../../../images/work.jpg';
 import { Link } from 'react-router-dom';
+import {useInView} from 'react-intersection-observer'
 
 const MyWorkPattern = () => {
+
+  const [element, inView] = useInView({threshold: 0.1, triggerOnce: true})
+  
   return (
-    <div className="workpattern-container">
+    <section ref={element} className={`workpattern-container ${inView ? "animate" : ""}`}>
         <div className='pic-container'>
             <img src={workpatternpic} alt='zdjęcie właścicielki firmy2'></img>
         </div>
@@ -19,7 +23,7 @@ ofertę. Możemy spotkać się osobiście lub online poprzez praformy multimedia
             </p>
             <Link to={"/jak-pracuje"}><button>Dowiedz się więcej</button></Link>
         </div>
-    </div>
+    </section>
   )
 }
 

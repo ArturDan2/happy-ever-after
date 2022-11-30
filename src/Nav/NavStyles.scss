@@ -2,7 +2,7 @@
     z-index: 10;
     top: 0;
     transition: all 0.5s ease;
-    transform: translateY(0vh);
+    // transform: translateY(-10vh);
     .logo-container{
         background-color: white;
         padding: 0.3rem 1rem;
@@ -13,12 +13,19 @@
 
     li{
         cursor: pointer;
-        padding: 1rem;
+        a{
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+        }
     }
 }
 .nav-container.anim{
+    transform: translateY(-10vh);
     animation-name: menu-down;
-    animation-duration: 4s;
+    animation-duration: 0.7s;
+    animation-delay: 5.3s;
+    animation-fill-mode: forwards;
 }
 .nav-container.sticky{
     position: sticky;
@@ -40,10 +47,9 @@
 // }
 
 @keyframes menu-down {
-    0%   {transform:translateY(-10vh);}
-    80% {transform: translateY(-10vh);}
+    0%   {transform: translateY(-10vh);}
   100% {transform: translateY(0vh);
-        }
+    }
 }
 
 .deskopt-nav{
@@ -87,6 +93,7 @@
         z-index: -1;
         li{
             margin: 1rem;
+            font-size: 2rem;
         }
     }
     .nav.open{

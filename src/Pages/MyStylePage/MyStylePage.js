@@ -1,8 +1,11 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./Styles/MyStyleStyles.scss";
 import { pins } from './pins';
 
 const MyStylePage = () => {
+
+    const [animPage, setAnimatePage] = useState()
+
     useEffect(() => {
         const script = document.createElement('script')
         script.async = true
@@ -11,10 +14,11 @@ const MyStylePage = () => {
         script.src = '//assets.pinterest.com/js/pinit.js'
         document.body.appendChild(script)
         if (window.doBuild) window.doBuild()
+        setAnimatePage(true);
       }, [])
   
       return (
-    <div className='main-container'>
+    <div className={`main-container slide-in sub-page`}>
         <div className='heading'>
             <h2>Mój styl</h2>
             <div className="text">

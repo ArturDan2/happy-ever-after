@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
-import './NavStyles.scss'
-import logo from "../images/logo_simplified3.png"
+import './NavStyles.scss';
+import logo from "../images/logo_simplified3.png";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const Nav = ({navVisible}) => {
+const Nav = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   const [offset, setOffset] = useState(0);
-  const location = useLocation()
+  const location = useLocation();
   const animated = !!sessionStorage.getItem("animated");
 
 
   useEffect(() => {
-      const onScroll = () => setOffset(window.pageYOffset);
+      const onScroll = () => {setOffset(window.pageYOffset)}
       // clean up code
       window.removeEventListener('scroll', onScroll);
       window.addEventListener('scroll', onScroll, { passive: true });
@@ -26,7 +26,7 @@ const Nav = ({navVisible}) => {
   },[location])
 
   return (
-    <div className={`nav-container ${animated ? "" : "anim"} ${navVisible ? "visible" : "hidden"} ${offset !== 0 || location.pathname !== "/" || isOpen ? "sticky" : "static"}`}>
+    <div className={`nav-container ${animated ? "" : "anim"} ${offset !== 0 || location.pathname !== "/" || isOpen ? "sticky" : "static"}`}>
       <div className="deskopt-nav">
         <ul className="flex-row space-around nav">
             <li><Link to="/">Home</Link></li>
@@ -37,7 +37,7 @@ const Nav = ({navVisible}) => {
             </div>
             <li><Link to="/oferta">Oferta</Link></li>
             <li><Link to="/jak-pracuje">Jak pracuję</Link></li>
-            <li><Link to="">Kontakt</Link></li>
+            <li><Link to="/kontakt">Kontakt</Link></li>
         </ul>
       </div>
       <div className="mobile-nav">

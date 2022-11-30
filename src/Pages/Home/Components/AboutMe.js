@@ -1,20 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import me from '../../../images/o-mnie.jpg'
 //roturer
 import { Link } from 'react-router-dom';
-import { useInView } from "react-intersection-observer";
+import {useInView} from 'react-intersection-observer'
 
-const AboutMe = ({navVisible, setNavVisible}) => {
-
-
-  const [element, view] = useInView({threshold: 0.9, triggerOnce: true})
-
-  if(view === true){
-    setNavVisible(true)
-  }
-
+const AboutMe = () => {
+  
+  const [element, inView] = useInView({threshold: 0.1, triggerOnce: true})
+  
   return (
-    <div ref={element} view={view} className="aboutme-container">
+    <section ref={element} className={`aboutme-container ${inView ? "animate" : ''}`}>
         <div className='flex-col text-container'>
             <h2 className='bold'>O mnie</h2>
             <p>Połączenie mojej romantycznej duszy ze skłonnością do perfekcyjnego planowania wszystkiego z
@@ -28,7 +23,7 @@ After będzie dla mnie ogromnym zaszczytem.
         <div className='pic-container'>
             <img src={me} alt='zdjęcie właścicielki firmy'></img>
         </div>
-    </div>
+    </section>
   )
 }
 

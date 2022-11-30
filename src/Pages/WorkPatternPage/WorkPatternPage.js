@@ -1,10 +1,9 @@
 import React from 'react';
 import './Styles/WorkPatternStyles.scss';
-import underline from '../../svgs/underline.svg';
 
 const WorkPatternPage = () => {
   return (
-    <div className='main-container'>
+    <div className='main-container slide-in sub-page'>
         <div className='heading'>
             <h2>Jak pracuję?</h2>
             <div className="text">
