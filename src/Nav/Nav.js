@@ -26,7 +26,7 @@ const Nav = () => {
   },[location])
 
   return (
-    <div className={`nav-container ${animated ? "" : "anim"} ${offset !== 0 || location.pathname !== "/" || isOpen ? "sticky" : "static"}`}>
+    <div className={`nav-container ${animated ? "" : "anim"} ${offset !== 0 || location.pathname !== "/" ? "sticky" : "static"}`}>
       <div className="deskopt-nav">
         <ul className="flex-row space-around nav">
             <li><Link to="/">Home</Link></li>
