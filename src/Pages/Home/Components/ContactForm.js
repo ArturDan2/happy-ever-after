@@ -19,7 +19,6 @@ const ContactForm = ({},ref) => {
         setFormMessage("Wiadomość została wysłana")
         e.target.reset()
         }, (error) => {
-        // console.log(error.text);
         setFormSucceed(false)
         setFormMessage("Nie udało się wysłać wiadomości")
         });
@@ -45,21 +44,21 @@ const ContactForm = ({},ref) => {
                 <div className='flex-col textinputs-container'>
                     <div className="flex-row space-between">
                         <div className='flex-col'>
-                            <label for='user_name'>Imię:</label>
+                            <label htmlFor='user_name'>Imię:</label>
                             <input required name='user_name' type='text'></input>
                         </div>
                         <div className='flex-col'>
-                            <label for='user_email'>Adres e-mail:</label>
+                            <label htmlFor='user_email'>Adres e-mail:</label>
                             <input required name='user_email' type='text'></input>
                         </div>
                     </div>
                     <div className="flex-row space-between">
                         <div className="flex-col">
-                            <label for='user_phonenumber'>Numer telefonu:</label>
+                            <label htmlFor='user_phonenumber'>Numer telefonu:</label>
                             <input required name='user_phonenumber' type='text'></input>
                         </div>
                         <div className='flex-col'>
-                            <label for='topic'>Temat wiadomości:</label>
+                            <label htmlFor='topic'>Temat wiadomości:</label>
                             <input required name='topic' type='text'></input>
                         </div>
                     </div>

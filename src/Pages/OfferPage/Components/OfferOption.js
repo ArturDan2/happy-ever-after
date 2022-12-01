@@ -29,7 +29,6 @@ const OfferOption = ({offerDetails}) => {
             <div>
             <div className="list-title">
                 <h4>{offerDetails.list_title}</h4>
-                {/* <button onClick={(e)=> {setIsExpanded(!isExpanded)}} className="expand-button"> expand </button> */}
                 <button onClick={(e)=> {setIsExpanded(!isExpanded)}} className={`expand-button ${isExpanded ? "expanded" : "unexpanded"}`}>
                     <div>
                         <span className="left-bar"></span>

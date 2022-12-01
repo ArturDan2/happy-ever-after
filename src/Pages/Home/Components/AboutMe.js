@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import me from '../../../images/o-mnie.jpg'
+import me from '../../../images/o-mnie-resized.jpg'
 //roturer
 import { Link } from 'react-router-dom';
 import {useInView} from 'react-intersection-observer'

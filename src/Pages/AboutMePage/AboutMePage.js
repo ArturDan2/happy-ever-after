@@ -1,5 +1,5 @@
 import React from 'react';
-import me from "../../images/o-mnie.jpg"
+import me from "../../images/o-mnie-resized.jpg"
 //styles
 import "./Styles/AboutMeStyles.scss"
 

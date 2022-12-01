@@ -23,14 +23,10 @@ const MyStylePage = () => {
             <h2>Mój styl</h2>
             <div className="text">
                 <p>
-                Cieszę się, że trafiliście właśnie do mnie! W mojej pracy cenię sobie swobodę, zorganizowanie i zaufanie.
-                Już od samego początku lubię określić plan działania i kroki, jakie podejmiemy podczas przygotowań do
-                Waszego Dnia Ślubu. Wspólnie stworzymy cudowne wydarzenie, które Wy oraz Goście zapamiętacie na
-                długie lata.
-                </p>
-                <p>
-                Zapraszam na niezobowiązujące, bezpłatne spotkanie, na którym się poznamy i przedstawię Wam moją
-                ofertę. Możemy spotkać się osobiście lub online poprzez praformy multimedialne.
+                Organizacja Ślubu i Wesela jest wyjątkowym i ekscytującym czasem, może jednak bywać stresująca. Dlatego w swojej pracy 
+                stawiam na swobodę i miłą atmosferę. Zależy mi, żeby Wasze wspomnienia z przygotowań były przyjemne i niezapomniane. 
+                Jestem otwarta na wszystkie Wasze pomysły, a przez tę porcję zdjęć chciałabym pokazać wam w jakiej stylistyce czuję się najlepiej. 
+                Razem sprawimy, aby ten dzień wyglądał dokładnie tak jak sobie wymarzyliście!
                 </p>
             </div>
         </div>

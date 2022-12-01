@@ -19,15 +19,6 @@ export const offers = [
         picture: "organizacja.jpg"
     },
     {
-        title: 'Częściowa organizacja ślubu i wesela',
-        paragraph: `Jeśli zorganizowaliście już większość elementów tego ważnego dnia, idealnym rozwiązaniem dla Was
-        będzie skorzystanie z usługi częściowej koordynacji ślubu. Wspólnie ustalimy, co już zostało zrobione i
-        zorganizujemy całą resztę.`, 
-        list_title: null,
-        list_items: [],
-        picture: "częściowa-organizacja.jpg"
-    },
-    {
         title: 'Typowanie lokalizacji na przyjęcie weselne',
         paragraph: `Wybór miejsca na przyjęcie weselnego jest jednią z najistotniejszych decyzji do podjęcia podczas
         organizacji ślubu i wesela. Dlatego to właśnie od tego powinniście zacząć przygotowania. Ważne, abyście
@@ -65,5 +56,14 @@ export const offers = [
                     `ostateczne rozliczenia z podwykonawcami`
                     ],
         picture: "koordynacja.jpg"
+    },
+    {
+        title: 'Częściowa organizacja ślubu i wesela',
+        paragraph: `Jeśli zorganizowaliście już większość elementów tego ważnego dnia, idealnym rozwiązaniem dla Was
+        będzie skorzystanie z usługi częściowej koordynacji ślubu. Wspólnie ustalimy, co już zostało zrobione i
+        zorganizujemy całą resztę.`, 
+        list_title: null,
+        list_items: [],
+        picture: "częściowa-organizacja.jpg"
     },
 ]
