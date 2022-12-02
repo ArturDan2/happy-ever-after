@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import insta from "../../../svgs/insta.svg";
 import facebook from "../../../svgs/facebook.svg";
-import contactbackground from "../../../images/contactbackground.png";
+import contactbackground from "../../../images/contactbackground.jpg";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import emailjs from '@emailjs/browser'
 
