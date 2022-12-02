@@ -45,21 +45,21 @@ const ContactForm = ({},ref) => {
                     <div className="flex-row space-between">
                         <div className='flex-col'>
                             <label htmlFor='user_name'>Imię:</label>
-                            <input required name='user_name' type='text'></input>
+                            <input required maxlength="20" name='user_name' type='text'></input>
                         </div>
                         <div className='flex-col'>
                             <label htmlFor='user_email'>Adres e-mail:</label>
-                            <input required name='user_email' type='text'></input>
+                            <input maxlength="320" required name='user_email' type='text'></input>
                         </div>
                     </div>
                     <div className="flex-row space-between">
                         <div className="flex-col">
                             <label htmlFor='user_phonenumber'>Numer telefonu:</label>
-                            <input required name='user_phonenumber' type='text'></input>
+                            <input required maxlength="12" name='user_phonenumber' type='text'></input>
                         </div>
                         <div className='flex-col'>
                             <label htmlFor='topic'>Temat wiadomości:</label>
-                            <input required name='topic' type='text'></input>
+                            <input required maxlength="50" name='topic' type='text'></input>
                         </div>
                     </div>
                 </div>
@@ -71,8 +71,8 @@ const ContactForm = ({},ref) => {
             </form>
         </div>
         <div className='icons mobile flex-row'>
-            <a target="_blank" href="https://www.instagram.com/happyeverafter_wedding/?igshid=YmMyMTA2M2Y%3D"><img src={insta}></img></a>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100087017143733"><img src={facebook}></img></a>
+            <a target="_blank" href="https://www.instagram.com/happyeverafter_wedding/?igshid=YmMyMTA2M2Y%3D"><img alt="Ikona przedstawiająca logo Instagrama" src={insta}></img></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100087017143733"><img alt="Ikona przedstawiająca logo Facebooka" src={facebook}></img></a>
         </div>
     </section>
   )

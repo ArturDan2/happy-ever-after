@@ -33,7 +33,7 @@ const Nav = () => {
             <li><Link to="o-mnie">O mnie</Link></li>
             <li><Link to="/moj-styl">Poznaj mój styl</Link></li>
             <div className="logo-container">
-              <img alt="Logo firmy Happy Ever After."src={logo}></img>
+              <Link to="/"><img alt="Logo firmy Happy Ever After." src={logo}></img></Link>
             </div>
             <li><Link to="/oferta">Oferta</Link></li>
             <li><Link to="/jak-pracuje">Jak pracuję</Link></li>
@@ -46,7 +46,7 @@ const Nav = () => {
           <span className="stripe-2"></span>
         </div>
         <div className="logo-container">
-          <img src={logo}></img>
+          <Link to="/"><img alt="Logo firmy Happy Ever After." src={logo}></img></Link>
         </div>
         <ul className={`flex-col space-around nav ${isOpen ? "open" : "closed"}`}>
           <li><Link to="/">Home</Link></li>
