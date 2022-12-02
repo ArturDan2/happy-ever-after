@@ -7,9 +7,9 @@ const AboutMePage = () => {
   return (
     <div className='main-aboutme slide-in sub-page'>
         <div className="heading">
-            <h2>Kim jestem?</h2>
+            <h1>Kim jestem?</h1>
             <div className='pic-container'>
-                <img src={me} alt='zdjęcie właścicielki firmy'></img>
+                <img src={me} alt='Portret organizatorki ślubów - właścicielki firmy Happy Ever After.'></img>
             </div>
         </div>
         <div className="text">

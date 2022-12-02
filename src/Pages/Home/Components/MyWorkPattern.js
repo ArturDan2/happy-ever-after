@@ -10,10 +10,10 @@ const MyWorkPattern = () => {
   return (
     <section ref={element} className={`workpattern-container ${inView ? "animate" : ""}`}>
         <div className='pic-container'>
-            <img src={workpatternpic} alt='zdjęcie właścicielki firmy2'></img>
+            <img src={workpatternpic} alt='Organizatorka ślubów w trakcie pracy przy komputerze.'></img>
         </div>
         <div className='flex-col text-container'>
-            <h2 className="bold">Jak pracuję?</h2>
+            <h2 className="migra bold">Jak pracuję?</h2>
             <p>Cieszę się, że trafiliście właśnie do mnie! W mojej pracy cenię sobie swobodę, zorganizowanie i zaufanie.
 Już od samego początku lubię określić plan działania i kroki, jakie podejmiemy podczas przygotowań do
 Waszego Dnia Ślubu. Wspólnie stworzymy cudowne wydarzenie, które Wy oraz Goście zapamiętacie na

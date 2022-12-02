@@ -17,7 +17,7 @@
     overflow-x: hidden;
   }
 
-  h2{
+  h1{
     font-family: 'Migra Extralight', serif;
     font-weight: 100;
   }
@@ -26,9 +26,14 @@
     cursor: pointer;
     transition: background 0.5s ease;
   }
-  h2.bold{
-    font-family: 'Migra Extrabold', serif;
-    font-weight: 1000;
+  h2.migra.bold{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+  }
+
+  h2.migra.light{
+    font-family: 'Migra Extralight', serif;
+    font-weight: 100;
   }
 
   li{

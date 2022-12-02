@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    h2{
+    h1{
         font-size: 5rem;
         align-self: flex-start;
         color: #877867;
@@ -31,7 +31,7 @@
             flex-direction: column;
             gap: 1.2rem;
             justify-content: center;
-            h3{
+            h2{
                 font-size: 2.2rem;
             }
             p{
@@ -127,7 +127,7 @@
         .offer-section{
             gap: 3rem;
             .text-container{
-                h3{
+                h2{
                     font-size: 2rem;
                 }
                 p{

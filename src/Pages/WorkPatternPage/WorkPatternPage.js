@@ -5,7 +5,7 @@ const WorkPatternPage = () => {
   return (
     <div className='main-container slide-in sub-page'>
         <div className='heading'>
-            <h2>Jak pracuję?</h2>
+            <h1>Jak pracuję?</h1>
             <div className="text">
                 <p>
                 Cieszę się, że trafiliście właśnie do mnie! W mojej pracy cenię sobie swobodę, zorganizowanie i zaufanie.
@@ -21,7 +21,7 @@ const WorkPatternPage = () => {
         </div>
         <div className="steps">
             <div className="step">
-                <h3>KROK 1 : Spotkanie</h3>
+                <h2>KROK 1 : Spotkanie</h2>
                 <ul>
                     <li>Poproszę was o wspólne wypełnienie ankiety Pary Młodej, która pomoże mi określić wasze oczekiwania</li>
                     <li>porozmawiamy o Waszych inspiracjach</li>
@@ -31,14 +31,14 @@ const WorkPatternPage = () => {
                 </ul>
             </div>
             <div className="step">
-                <h3>KROK 2 : Przygotowanie oferty</h3>
+                <h2>KROK 2 : Przygotowanie oferty</h2>
                 <ul>
                     <li>przedstawię ofertę, którą przygotowałam dla Was na podstawie ankiety i naszych rozmów</li>
                     <li>omówimy kosztorys ślubny oraz zakres prac, jakie dla Was wykonam.</li>
                 </ul>
             </div>
             <div className="step">
-                <h3>KROK 3 : Podpisanie umowy</h3>
+                <h2>KROK 3 : Podpisanie umowy</h2>
                 <ul className="step-list">
                     <li>podpiszemy umowę</li>
                     <li>przystąpimy do realizacji przygotowań do Waszego Dnia Ślubu</li>

@@ -11,7 +11,7 @@ const AboutMe = () => {
   return (
     <section ref={element} className={`aboutme-container ${inView ? "animate" : ''}`}>
         <div className='flex-col text-container'>
-            <h2 className='bold'>O mnie</h2>
+            <h2 className='migra bold'>O mnie</h2>
             <p>Połączenie mojej romantycznej duszy ze skłonnością do perfekcyjnego planowania wszystkiego z
 najdrobniejszymi szczegółami sprawia, że mogę z dumą powiedzieć, iż jestem dobra w tym, co robię.
 Otaczanie się Waszą miłością i szczęściem daje mi wielką radość oraz motywację do pracy i nieustannego
@@ -21,7 +21,7 @@ After będzie dla mnie ogromnym zaszczytem.
             <Link to="/o-mnie"><button>Dowiedz się więcej</button></Link>
         </div>
         <div className='pic-container'>
-            <img src={me} alt='zdjęcie właścicielki firmy'></img>
+            <img src={me} alt='Portret organizatorki ślubów - właścicielki firmy Happy Ever After.'></img>
         </div>
     </section>
   )

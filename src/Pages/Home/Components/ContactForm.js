@@ -31,7 +31,7 @@ const ContactForm = ({},ref) => {
             <div className='heading-content flex-col space-between'>
                 <div className='heading flex-col'>
                     <h2>Masz pytania?</h2>
-                    <h2 className='bold'>Skontaktuj się ze mną!</h2>
+                    <h2 className='migra bold'>Skontaktuj się ze mną!</h2>
                 </div>
                 <div className='icons desktop flex-row'>
                     <a target="_blank" href="https://www.instagram.com/happyeverafter_wedding/?igshid=YmMyMTA2M2Y%3D"><img src={insta}></img></a>

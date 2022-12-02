@@ -16,7 +16,8 @@ export const offers = [
                     'pomoc w wyborze podwykonawców',
                     'typowanie lokalizacji na przyjęcie weselne'
                     ],
-        picture: "organizacja.jpg"
+        picture: "organizacja.jpg",
+        alt: "Nowożeńcy odchodzący od ołtarza, obrzuciani ryżem przez gości."
     },
     {
         title: 'Typowanie lokalizacji na przyjęcie weselne',
@@ -32,7 +33,8 @@ export const offers = [
                     'wspólny rekonesans typowanych miejsc weselnych',
                     'rezerwacja wybranego przez Was miejsca na przyjęcie weselne',
                     ],
-         picture: "miejsce.jpg"
+         picture: "miejsce.jpg",
+         alt: "Wznoszenie toastu przez gości weselnych."
     },
     {
         title: 'Koordynacja Dnia Ślubu i Wesela',
@@ -55,7 +57,8 @@ export const offers = [
                     `rozwiązywanie bieżących problemów oraz pomoc w trudnych i niespodziewanych sytuacjach`,
                     `ostateczne rozliczenia z podwykonawcami`
                     ],
-        picture: "koordynacja.jpg"
+        picture: "koordynacja.jpg",
+        alt: "Objęci nowożeńcy otoczeni gośćmi weselnymi."
     },
     {
         title: 'Częściowa organizacja ślubu i wesela',
@@ -64,6 +67,7 @@ export const offers = [
         zorganizujemy całą resztę.`, 
         list_title: null,
         list_items: [],
-        picture: "częściowa-organizacja.jpg"
+        picture: "częściowa-organizacja.jpg",
+        alt: "Zastawa stołu udekorowana bukietami kwiatów i świecami."
     },
 ]

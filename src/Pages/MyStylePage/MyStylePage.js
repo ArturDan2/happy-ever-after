@@ -20,7 +20,7 @@ const MyStylePage = () => {
       return (
     <div className={`main-container slide-in sub-page`}>
         <div className='heading'>
-            <h2>Mój styl</h2>
+            <h1>Mój styl</h1>
             <div className="text">
                 <p>
                 Organizacja Ślubu i Wesela jest wyjątkowym i ekscytującym czasem, może jednak bywać stresująca. Dlatego w swojej pracy 
@@ -32,7 +32,7 @@ const MyStylePage = () => {
         </div>
         <div className="pins">
                 {pins.map((pin)=> {
-                    return <div className="instax"><a className="pin" data-pin-width="medium" data-pin-do="embedPin" data-pin-lang="pl" data-pin-terse="true" href={pin}></a></div>
+                    return <div key={pin} className="instax"><a className="pin" data-pin-width="medium" data-pin-do="embedPin" data-pin-lang="pl" data-pin-terse="true" href={pin}></a></div>
                 })}
         </div>
     </div>
