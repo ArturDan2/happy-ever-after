@@ -1,11 +1,11 @@
 import React, {useRef, useEffect} from 'react';
 import "./Styles/HomeStyles.scss";
-import Opening from './Components/Opening';
-import AboutMe from './Components/AboutMe';
-import Offer from './Components/Offer';
-import MyStyle from './Components/MyStyle';
-import MyWorkPattern from './Components/MyWorkPattern';
-import ContactForm from './Components/ContactForm';
+import Opening from './Sections/Opening';
+import AboutMe from './Sections/AboutMe';
+import Offer from './Sections/Offer';
+import MyStyle from './Sections/MyStyle';
+import MyWorkPattern from './Sections/MyWorkPattern';
+import ContactForm from './Sections/ContactForm';
 import { useLocation } from 'react-router-dom';
 
 

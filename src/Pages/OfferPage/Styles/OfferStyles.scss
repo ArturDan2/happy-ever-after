@@ -2,7 +2,7 @@
     margin: 10rem 7rem;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 5rem;
     h1{
         font-size: 5rem;
         align-self: flex-start;
@@ -100,24 +100,27 @@
         margin: 0;
         opacity: 0;
         padding: 0;
+        max-height: 0;
         transition: 
             opacity .25s, 
             margin .5s 0.25s, 
             font-size .5s 0.25s, 
-            padding .5s .25s;
+            padding .5s .25s,
+            max-height .35s;
     }
     .expandable-list.expanded{
         font-size: 16px;
         opacity: 1;
         height: auto;
         padding: 5px 0;
-        
+        max-height: 25rem;
         /* grow, then fade in */
         transition:   
           margin .25s,
           padding .25s,
           font-size .25s,
-          opacity .5s .25s;
+          opacity .5s .25s,
+          max-height .35s;
     }
     }
     @media (max-width: 1150px){
