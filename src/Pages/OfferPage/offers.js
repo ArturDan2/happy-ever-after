@@ -67,7 +67,7 @@ export const offers = [
         zorganizujemy całą resztę.`, 
         list_title: null,
         list_items: [],
-        picture: "częściowa-organizacja.jpg",
+        picture: "czesciowa-organizacja.jpg",
         alt: "Zastawa stołu udekorowana bukietami kwiatów i świecami."
     },
 ]

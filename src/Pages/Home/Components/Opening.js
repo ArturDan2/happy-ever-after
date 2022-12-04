@@ -1,7 +1,7 @@
 import React,{useEffect, useRef} from 'react'
-import twigs from '../../../images/logo-warstwy/gałązki-białe.png';
-import ring from "../../../images/logo-warstwy/obrączki-białe.png";
-import text from "../../../images/logo-warstwy/napis_biały.png";
+import twigs from '../../../images/logo-warstwy/galazki.png';
+import ring from "../../../images/logo-warstwy/obraczki.png";
+import text from "../../../images/logo-warstwy/napis.png";
 
 const Opening = () => {
 
