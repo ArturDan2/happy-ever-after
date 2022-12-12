@@ -26,38 +26,38 @@ const Nav = () => {
   },[location])
 
   return (
-    <div className={`nav-container ${animated ? "" : "anim"} ${offset !== 0 || location.pathname !== "/" ? "sticky" : "static"}`}>
+    <nav className={`nav-container ${animated ? "" : "anim"} ${offset !== 0 || location.pathname !== "/" ? "nav-container--sticky" : "nav-container--static"}`}>
       <div className="deskopt-nav">
-        <ul className="flex-row space-around nav">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="o-mnie">O mnie</Link></li>
-            <li><Link to="/moj-styl">Poznaj mój styl</Link></li>
-            <div className="logo-container">
+        <ul className="deskopt-nav_list flex-row space-around">
+            <li className="deskopt-nav_list_item"><Link to="/">Home</Link></li>
+            <li className="deskopt-nav_list_item"><Link to="o-mnie">O mnie</Link></li>
+            <li className="deskopt-nav_list_item"><Link to="/moj-styl">Poznaj mój styl</Link></li>
+            <li className="deskopt-nav_list_item deskopt-nav_list_item--logo">
               <Link to="/"><img alt="Logo firmy Happy Ever After." src={logo}></img></Link>
-            </div>
-            <li><Link to="/oferta">Oferta</Link></li>
-            <li><Link to="/jak-pracuje">Jak pracuję</Link></li>
-            <li><Link to="/kontakt">Kontakt</Link></li>
+            </li>
+            <li className="deskopt-nav_list_item"><Link to="/oferta">Oferta</Link></li>
+            <li className="deskopt-nav_list_item"><Link to="/jak-pracuje">Jak pracuję</Link></li>
+            <li className="deskopt-nav_list_item"><Link to="/kontakt">Kontakt</Link></li>
         </ul>
       </div>
       <div className="mobile-nav">
-        <div onClick={() => setIsOpen(!isOpen)} className={`nav-btn ${offset !== 0 || location.pathname !== "/" ? "sticky" : "static"} ${isOpen ? "open" : "closed"}`}>
-          <span className="stripe-1"></span>
-          <span className="stripe-2"></span>
+        <div onClick={() => setIsOpen(!isOpen)} className={`mobile-nav_btn ${isOpen ? "mobile-nav_btn--open" : "mobile-nav_btn--closed"}`}>
+          <span className="mobile-nav_btn_stripe-1"></span>
+          <span className="mobile-nav_btn_stripe-2"></span>
         </div>
-        <div className="logo-container">
+        <div className="mobile-nav_logo-container">
           <Link to="/"><img alt="Logo firmy Happy Ever After." src={logo}></img></Link>
         </div>
-        <ul className={`flex-col space-around nav ${isOpen ? "open" : "closed"}`}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="o-mnie">O mnie</Link></li>
-          <li><Link to="/moj-styl">Poznaj mój styl</Link></li>
-          <li><Link to="/oferta">Oferta</Link></li>
-          <li><Link to="/jak-pracuje">Jak pracuję</Link></li>
-          <li><Link to="/kontakt">Kontakt</Link></li>
+        <ul className={`mobile-nav_list flex-col ${isOpen ? "mobile-nav_list--open" : "mobile-nav_list--closed"}`}>
+          <li className="mobile-nav_list_item"><Link to="/">Home</Link></li>
+          <li className="mobile-nav_list_item"><Link to="o-mnie">O mnie</Link></li>
+          <li className="mobile-nav_list_item"><Link to="/moj-styl">Poznaj mój styl</Link></li>
+          <li className="mobile-nav_list_item"><Link to="/oferta">Oferta</Link></li>
+          <li className="mobile-nav_list_item"><Link to="/jak-pracuje">Jak pracuję</Link></li>
+          <li className="mobile-nav_list_item"><Link to="/kontakt">Kontakt</Link></li>
         </ul>
       </div>
-    </div>
+    </nav>
   )
 }
 

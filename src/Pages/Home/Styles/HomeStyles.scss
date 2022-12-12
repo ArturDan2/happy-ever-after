@@ -559,8 +559,16 @@ button{
     height: 100vh;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     background-color: #3D4339;
+    .bottom-text-contact{
+        color: white;
+        display: flex; 
+        gap: 1rem;
+        z-index: 2;
+        margin-bottom: 1rem;
+    }
     .icons{
         margin-bottom: 2.5rem;
         z-index: 2;
@@ -731,6 +739,11 @@ button{
     @media(max-width: 750px){
         .form-container{
             width: 80%;
+        }
+        .bottom-text-contact{
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
         }
     }
     

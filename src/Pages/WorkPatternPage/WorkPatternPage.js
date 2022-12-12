@@ -15,7 +15,7 @@ const WorkPatternPage = () => {
                 </p>
                 <p>
                 Zapraszam na niezobowiązujące, bezpłatne spotkanie, na którym się poznamy i przedstawię Wam moją
-                ofertę. Możemy spotkać się osobiście lub online poprzez praformy multimedialne.
+                ofertę. Możemy spotkać się osobiście lub online poprzez praformy multimedialne. Pracuję głównie na terenie Poznania i okolic.
                 </p>
             </div>
         </div>
@@ -23,7 +23,7 @@ const WorkPatternPage = () => {
             <div className="step">
                 <h2>KROK 1 : Spotkanie</h2>
                 <ul>
-                    <li>Poproszę was o wspólne wypełnienie ankiety Pary Młodej, która pomoże mi określić wasze oczekiwania</li>
+                    <li>poproszę was o wspólne wypełnienie ankiety Pary Młodej, która pomoże mi określić wasze oczekiwania</li>
                     <li>porozmawiamy o Waszych inspiracjach</li>
                     <li>wspólnie omówimy styl, charakter i koncepcję Waszej uroczystości</li>
                     <li>wstępnie omówimy ofertę naszej agencji</li>

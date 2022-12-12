@@ -3,7 +3,7 @@
     top: 0;
     transition: all 0.5s ease;
     // transform: translateY(-10vh);
-    .logo-container{
+    .deskopt-nav_list_item--logo{
         background-color: white;
         padding: 0.3rem 1rem;
     }
@@ -27,24 +27,25 @@
     animation-delay: 5.3s;
     animation-fill-mode: forwards;
 }
-.nav-container.sticky{
+.nav-container--sticky{
     position: sticky;
     background-color: white;
     color: grey;
+    .mobile-nav_btn--closed{
+        .mobile-nav_btn_stripe-1, .mobile-nav_btn_stripe-2{
+            background-color: grey;
+        }
+        .mobile-nav_btn_stripe-1{
+            box-shadow: 0 10px 0 grey;
+        }
+    }
 }
 
-.nav-container.static{
+.nav-container--static{
     position: static;
     background-color: none;
     color: white;
 }
-// .nav-container.hidden{
-//     visibility: hidden;
-// }
-// .nav-container.visible{
-//     top: 0;
-//     transition: all 0.4s ease;
-// }
 
 @keyframes menu-down {
     0%   {transform: translateY(-10vh);}
@@ -53,7 +54,7 @@
 }
 
 .deskopt-nav{
-    .nav{
+    &_list{
         width: 100%;
         height: 10vh;
         align-items: center;
@@ -72,14 +73,13 @@
     align-items: center;
     justify-content: flex-start;
     display: none;
-    .logo-container{
+    &_logo-container{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        z-index: -1;
         justify-self: center;
     }
-    .nav{
+    &_list{
         height: 0vh;
         margin: -1rem -1.5rem;
         position: absolute;
@@ -88,58 +88,47 @@
         background-color: #685540;
         justify-content: center;
         align-items: center;
-        font-size: 3rem;
+        gap: 3rem;
         color: rgb(221, 216, 190);
         overflow: hidden;
         z-index: 1;
         transition: height 0.5s ease;
-        li{
-            margin: 1rem;
+        &_item{
             font-size: 2rem;
         }
     }
-    .nav.open{
+    &_list--open{
         display: flex;
         height: 105vh;
         width: 100vw;
     }
-    .nav.closed{
+    &_list--closed{
         height: 0vh;
     }
 
-    .nav-btn {
+    &_btn {
         width: 36px;
         cursor: pointer;
         z-index: 2;
-    }
-
-    .nav-btn{
-        span , .stripe-1{
+        span , &_stripe-1{
             background-color: #fff;
             display: block;
             height: 4px;
             transition: all 200ms ease-in-out;
         }
-        .stripe-1{
+        &_stripe-1{
             box-shadow: 0 10px 0 #fff;
             margin-bottom: 16px;
         }
     }
-    .nav-btn.open{
-        .stripe-2{
+
+    &_btn--open{
+        .mobile-nav_btn_stripe-2{
             transform: translateY(-10px) rotate(-45deg);
         }
-        .stripe-1{
+        .mobile-nav_btn_stripe-1{
             box-shadow: 0 0 0 #fff;
             transform: translateY(10px) rotate(45deg);
-        }
-    }
-    .nav-btn.closed.sticky{
-        span{
-            background-color: grey;
-        }
-        .stripe-1{
-            box-shadow: 0 10px 0 grey;
         }
     }
 }

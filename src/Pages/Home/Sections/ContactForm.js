@@ -74,6 +74,10 @@ const ContactForm = ({},ref) => {
             <a target="_blank" href="https://www.instagram.com/happyeverafter_wedding/?igshid=YmMyMTA2M2Y%3D"><img alt="Ikona przedstawiająca logo Instagrama" src={insta}></img></a>
             <a target="_blank" href="https://www.facebook.com/profile.php?id=100087017143733"><img alt="Ikona przedstawiająca logo Facebooka" src={facebook}></img></a>
         </div>
+        <adress className="bottom-text-contact">
+            <a href="tel:+48 662-331-337">+48 662-331-337</a>
+            <a href="mailto:office@happyeverafterwedding.pl">office@happyeverafterwedding.pl</a>
+        </adress>
     </section>
   )
 }
