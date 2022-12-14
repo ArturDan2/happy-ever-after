@@ -5,8 +5,8 @@ import "./Styles/OfferStyles.scss"
 
 const OfferPage = () => {
     return (
-    <div className='main-container slide-in sub-page'>
-        <h1>Oferta</h1>
+    <div className='offer-page slide-in sub-page'>
+        <h1 className="offer-page__heading">Oferta</h1>
         {offers.map((offer)=>{
             return <OfferOption key={offers.indexOf(offer)} offerDetails={offer}/>
         })}

@@ -14,13 +14,13 @@ const Opening = () => {
   },[])
 
   return (
-    <section className="flex-col opening-container">
-      <div ref={picRef} className={`background ${animated ? "noanim" : "anim" }`}>
-        <div className="logo-layer">
-          <div className={`logo-container ${animated ? "noanim" : "anim" }`}>
-            <img className="twigs" src={twigs}></img>
-            <img className="ring" src={ring}></img>
-            <img className="text"src={text}></img>
+    <section className="flex-col opening">
+      <div ref={picRef} className={`opening__background ${animated ? "opening__background--noanim" : "opening__background--anim" }`}>
+        <div className="opening__logo-layer">
+          <div className={`opening__logo-container ${animated ? "noanim" : "anim" }`}>
+            <img className="opening__twigs" src={twigs}></img>
+            <img className="opening__ring" src={ring}></img>
+            <img className="opening__text"src={text}></img>
           </div>
           <h1 className={`${animated ? "noanim" : "anim" }`}>Organizacja ślubu</h1>
         </div>

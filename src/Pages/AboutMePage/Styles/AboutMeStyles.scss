@@ -1,28 +1,28 @@
-.main-aboutme{
+.about-me-page{
     display: flex;
     flex-direction: row;
     margin: 7rem 10rem;
     gap: 10rem;
     transform: translateY(20%);
     opacity: 0;
-    .heading{
+    &__header-container{
         width: 30%;
         h1{
             font-size: 5rem;
             margin: 2rem 0rem;
             color: #80705E;
         }
+    }
+    &__pic-container{
+        width: 22rem;
+        height: 30rem;
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        .pic-container{
-            width: 22rem;
-            height: 30rem;
-        }
     }
-    .text{
+    &__text{
         width: 70%;
         padding-top: 16rem;
         color: #231F20;
@@ -34,7 +34,7 @@
     @media (max-width: 1000px){
         margin: 10rem 4rem;
         gap: 12rem;
-        .heading > .pic-container{
+        &__pic-container{
             width: 20rem;
             height: 28rem;
         }
@@ -42,14 +42,14 @@
     @media (max-width: 750px){
         flex-direction: column;
         gap: 3rem;
-        .heading{
+        &__header-container{
             width: 100%;
-            .pic-container{
-                margin: auto;
-                width: 100%;
-            }
         }
-        .text{
+        &__pic-container{
+            margin: auto;
+            width: 100%;
+        }
+        &__text{
             width: 100%;
             padding-top: 0;
         }

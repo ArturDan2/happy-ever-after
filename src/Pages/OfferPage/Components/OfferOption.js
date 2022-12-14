@@ -18,25 +18,25 @@ const OfferOption = ({offerDetails}) => {
     }
 
     return (
-    <section className='offer-section'>
-        <div className='picture-container'>
+    <section className='offer-option'>
+        <div className='offer-option__picture-container'>
             <img alt={offerDetails.alt} src={pic}></img>
         </div>
-        <div className='text-container'>
+        <div className='offer-option__text-container'>
             <h2>{offerDetails.title}</h2>
             <p>{offerDetails.paragraph}</p>
             {hasList () ? 
             <div>
-            <div className="list-title">
+            <div className="offer-option__list-title">
                 <h3>{offerDetails.list_title}</h3>
-                <button onClick={(e)=> {setIsExpanded(!isExpanded)}} className={`expand-button ${isExpanded ? "expanded" : "unexpanded"}`}>
+                <button onClick={(e)=> {setIsExpanded(!isExpanded)}} className={`offer-option__expand-button ${isExpanded ? "expanded" : "unexpanded"}`}>
                     <div>
                         <span className="left-bar"></span>
                         <span className="right-bar"></span>
                     </div>
                 </button>
             </div>
-            <ul className={`expandable-list ${isExpanded ? "expanded" : "unexpanded"}`}>
+            <ul className={`offer-option__expandable-list ${isExpanded ? "expanded" : "unexpanded"}`}>
                 {offerDetails.list_items.map((item)=>{
                     return <li key={offerDetails.list_items.indexOf(item)}>{item}</li>
                 })}

@@ -5,14 +5,14 @@ import "./Styles/AboutMeStyles.scss"
 
 const AboutMePage = () => {
   return (
-    <div className='main-aboutme slide-in sub-page'>
-        <div className="heading">
-            <h1>Kim jestem?</h1>
-            <div className='pic-container'>
+    <div className='about-me-page slide-in sub-page'>
+        <div className="about-me-page__header-container">
+            <h1 className='about-me-page__heading'>Kim jestem?</h1>
+            <div className='about-me-page__pic-container'>
                 <img src={me} alt='Portret organizatorki ślubów - właścicielki firmy Happy Ever After.'></img>
             </div>
         </div>
-        <div className="text">
+        <div className="about-me-page__text">
             <p>
                 Myśl o zastaniu Wedding Plannerką zrodziła się w mojej głowie już w liceum, kiedy to towarzyszyłam
                 siostrze w organizacji jej wesela. Później przygotowywanie tego typu wydarzeń przerodziło się w pasję i

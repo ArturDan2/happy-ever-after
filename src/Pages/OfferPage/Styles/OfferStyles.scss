@@ -1,20 +1,22 @@
-.main-container{
-    margin: 10rem 7rem;
+.offer-page{
+    margin: 7rem 10rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    transform: translateY(20%);
+    opacity: 0;
     h1{
         font-size: 5rem;
         align-self: flex-start;
         color: #877867;
     }
-    .offer-section{
+    .offer-option{
         display: flex;
         flex-direction: row;
         gap: 5rem;
         position: relative;
         transition: all 0.5s ease;
-        .picture-container{
+        &__picture-container{
             background-color: beige;
             width: 40%;
             height: 20rem;
@@ -25,7 +27,7 @@
                 object-position: 0% 85%;
             }
         }
-        .text-container{
+        &__text-container{
             width: 70%;
             display: flex;
             flex-direction: column;
@@ -39,7 +41,7 @@
                 line-height: 1.5rem;
             }
         }
-    .list-title{
+    &__list-title{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -49,35 +51,35 @@
         }
     }
 
-    .expand-button{
+    &__expand-button{
         position: relative;
         background-color: #685540;
         margin: 0rem 1.2rem;
         transform: scale(0.9);
-    }
-    .left-bar{
-        width: 15px;
-        height: 2px;
-        background-color: white;
-        position: absolute;
-        top: center;
-        left: center;
-        transform: translate(-90%,-50%) rotate(25deg);
-        transition: all 0.2s ease;
+        .left-bar{
+            width: 15px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            top: center;
+            left: center;
+            transform: translate(-90%,-50%) rotate(25deg);
+            transition: all 0.2s ease;
+        }
+
+        .right-bar{
+            width: 15px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            top: center;
+            left: center;
+            transform: translate(-4%,-50%) rotate(-25deg);
+            transition: all 0.2s ease;
+        }
     }
 
-    .right-bar{
-        width: 15px;
-        height: 2px;
-        background-color: white;
-        position: absolute;
-        top: center;
-        left: center;
-        transform: translate(-4%,-50%) rotate(-25deg);
-        transition: all 0.2s ease;
-    }
-    
-    .expand-button.expanded{
+    &__expand-button.expanded{
         .left-bar{
             transform: translate(-90%,-50%) rotate(-25deg)
         }
@@ -86,7 +88,7 @@
         }
     }
 
-    .expandable-list{
+    &__expandable-list{
         height: 100%;
         li{
             padding: 0.5rem;
@@ -95,7 +97,7 @@
             margin-left: 1.5rem;
         }
     }
-    .expandable-list.unexpanded{
+    &__expandable-list.unexpanded{
         font-size: 0;
         margin: 0;
         opacity: 0;
@@ -108,7 +110,7 @@
             padding .5s .25s,
             max-height .7s;
     }
-    .expandable-list.expanded{
+    &__expandable-list.expanded{
         font-size: 16px;
         opacity: 1;
         height: auto;
@@ -128,9 +130,9 @@
     }
     @media (max-width: 1000px){
         margin: 10rem 2rem;
-        .offer-section{
+        &__offer-option{
             gap: 3rem;
-            .text-container{
+            &__text-container{
                 h2{
                     font-size: 2rem;
                 }
@@ -142,12 +144,12 @@
     }
     @media (max-width: 1000px){
         margin: 10rem 4rem;
-        .offer-section{
+        &__offer-option{
             flex-direction: column;
-            .text-container{
+            &__text-container{
                 width: 100%;
             }
-            .picture-container{
+            &__picture-container{
                 width: 100%;
             }
         }
