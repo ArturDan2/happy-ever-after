@@ -1,3 +1,5 @@
+@use "../../../SCSS/colors.scss" as *;
+
 .offer-page{
     margin: 7rem 10rem;
     display: flex;
@@ -8,7 +10,6 @@
     h1{
         font-size: 5rem;
         align-self: flex-start;
-        color: #877867;
     }
     .offer-option{
         display: flex;
@@ -17,7 +18,7 @@
         position: relative;
         transition: all 0.5s ease;
         &__picture-container{
-            background-color: beige;
+            background-color: $work-pattern-secondary;
             width: 40%;
             height: 20rem;
             img{
@@ -35,7 +36,7 @@
             justify-content: space-evenly;
             h2{
                 font-size: 2.2rem;
-                color: #524A42;
+                color: $pg-offer-option-main;
             }
             p{
                 line-height: 1.5rem;
@@ -53,13 +54,13 @@
 
     &__expand-button{
         position: relative;
-        background-color: #685540;
+        background-color: $pg-offer-expand-btn;
         margin: 0rem 1.2rem;
         transform: scale(0.9);
         .left-bar{
             width: 15px;
             height: 2px;
-            background-color: white;
+            background-color: $white;
             position: absolute;
             top: center;
             left: center;
@@ -70,7 +71,7 @@
         .right-bar{
             width: 15px;
             height: 2px;
-            background-color: white;
+            background-color: $white;
             position: absolute;
             top: center;
             left: center;
@@ -92,7 +93,7 @@
         height: 100%;
         li{
             padding: 0.5rem;
-            color: grey;
+            color: $pg-offer-li;
             list-style: disc;
             margin-left: 1.5rem;
         }
@@ -130,7 +131,7 @@
     }
     @media (max-width: 1000px){
         margin: 10rem 2rem;
-        &__offer-option{
+        .offer-option{
             gap: 3rem;
             &__text-container{
                 h2{
@@ -144,7 +145,7 @@
     }
     @media (max-width: 1000px){
         margin: 10rem 4rem;
-        &__offer-option{
+        .offer-option{
             flex-direction: column;
             &__text-container{
                 width: 100%;

@@ -1,3 +1,5 @@
+@use "./SCSS/colors.scss" as *;
+
 *{
     margin: 0;
     padding: 0;
@@ -63,6 +65,9 @@
   }
 
   .sub-page{
+    h1{
+      color: $subpages-heading;
+    }
     p{
       text-align: justify;
     }

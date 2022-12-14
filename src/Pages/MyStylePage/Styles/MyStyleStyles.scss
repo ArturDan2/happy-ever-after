@@ -14,7 +14,6 @@
     h1{
         font-size: 5rem;
         margin: 2rem 0rem;
-        color: #80705E;
     }
     p{
         text-align: justify;
@@ -53,5 +52,32 @@
 
   [class*="page"] {
     min-height: 30rem;
+  }
+
+  @media (max-width: 1050px){
+    margin: 10rem 4rem;
+    &__header-container{
+        gap: 6rem;
+    }
+  }
+  @media (max-width: 950px){
+      &_header-container{
+          gap: 3rem;
+          h1{font-size: 4rem;}
+      }
+  }
+  @media (max-width: 700px){
+      &__header-container{
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+      }
+  }
+
+  @media (max-width: 500px){
+      margin: 6rem 2rem;
+  }
+  @media (max-width: 400px){
+      margin: 5rem 1rem;
   }
 }
