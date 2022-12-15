@@ -1,10 +1,11 @@
+@use "../../../SCSS/mixins" as *;
+
 .about-me-page{
-    display: flex;
-    flex-direction: row;
     margin: 7rem 10rem;
-    gap: 10rem;
     transform: translateY(20%);
     opacity: 0;
+    gap: 10rem;
+    @include setFlex(row);
     &__header-container{
         width: 30%;
         h1{

@@ -28,8 +28,8 @@ const ContactForm = ({},ref) => {
     <section ref={ref} className="contact">
         <div className="contact__background"><LazyLoadImage src={contactbackground} alt="tło" width="100%" height="100%"/></div>
         <div className="contact__heading-container">
-            <div className='contact__heading-content flex-col space-between'>
-                <div className='contact__heading flex-col'>
+            <div className='contact__heading-content'>
+                <div className='contact__heading'>
                     <h2>Masz pytania?</h2>
                     <h2 className='migra bold'>Skontaktuj się ze mną!</h2>
                 </div>
@@ -40,24 +40,24 @@ const ContactForm = ({},ref) => {
             </div>
         </div>
         <div className='contact__form-container'>
-            <form onSubmit={sendEmail} ref={form} className='contact__form flex-col'>
-                <div className='flex-col contact__textinputs-container'>
-                    <div className="flex-row space-between contact__inputs-wrapper">
-                        <div className='flex-col contact__input-label-wrapper'>
+            <form onSubmit={sendEmail} ref={form} className='contact__form'>
+                <div className='contact__textinputs-container'>
+                    <div className="contact__inputs-wrapper">
+                        <div className='contact__input-label-wrapper'>
                             <label htmlFor='user_name'>Imię:</label>
                             <input required maxlength="20" name='user_name' type='text'></input>
                         </div>
-                        <div className='flex-col contact__input-label-wrapper'>
+                        <div className='contact__input-label-wrapper'>
                             <label htmlFor='user_email'>Adres e-mail:</label>
                             <input maxlength="320" required name='user_email' type='text'></input>
                         </div>
                     </div>
-                    <div className="flex-row space-between contact__inputs-wrapper">
-                        <div className="flex-col contact__input-label-wrapper">
+                    <div className="contact__inputs-wrapper">
+                        <div className="contact__input-label-wrapper">
                             <label htmlFor='user_phonenumber'>Numer telefonu:</label>
                             <input required maxlength="12" name='user_phonenumber' type='text'></input>
                         </div>
-                        <div className='flex-col contact__input-label-wrapper'>
+                        <div className='contact__input-label-wrapper'>
                             <label htmlFor='topic'>Temat wiadomości:</label>
                             <input required maxlength="50" name='topic' type='text'></input>
                         </div>

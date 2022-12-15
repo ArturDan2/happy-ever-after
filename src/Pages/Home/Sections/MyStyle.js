@@ -7,7 +7,7 @@ import {LazyLoadImage} from 'react-lazy-load-image-component'
 
 const MyStyle = () => {
   return (
-    <section className='my-style flex-row space-around'>
+    <section className='my-style'>
         <div className='my-style__decorative-container'>
           <div className='my-style__pic-wrapper'>
             <div className='my-style__pic'><LazyLoadImage effect="blur" src={mystyle2} alt="Para nowożeńców na tle zachodzącego słońca." width="100%" height="100%"/></div>

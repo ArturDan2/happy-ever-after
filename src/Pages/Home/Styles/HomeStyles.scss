@@ -1,4 +1,5 @@
 @use '../../../SCSS/colors' as *;
+@use '../../../SCSS/mixins' as *;
 
 
 section.animate{
@@ -222,14 +223,13 @@ button{
     width: 100%;
     height: 100vh;
     align-items: center;
-    display: flex;
-    flex-direction: row;
+    @include setFlex(row);
     transform: translateY(20%);
     opacity: 0;
     > &__text-container, &__pic-container{
+        @include setFlex();
         width: 50%;
         padding: 6rem 4rem;
-        justify-content: center;
     }
     &__text-container{
         text-align: center;
@@ -246,9 +246,7 @@ button{
     }
 
     &__pic-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include setFlex();
         overflow: hidden;
         height: 70%;
         img{
@@ -350,7 +348,7 @@ button{
         background-repeat: no-repeat;
         background-size: cover;
         opacity: 90%;
-        justify-content: center;
+        @include setFlex(row, none, center);
     }
     &__box{
         background-color: $white;
@@ -418,10 +416,10 @@ button{
     width: 100%;
     height: 100vh;
     background-color: $my-style-main;
-    align-items: center;
     position: relative;
     overflow: hidden;
     padding: 1rem;
+    @include setFlex(row, space-around, center);
     *{
         color: $white;
         z-index: 1;
@@ -444,14 +442,12 @@ button{
         display: none;
     }
     &__decorative-container{
-        display: flex;
-        flex-direction: column;
+        @include setFlex(column, center, none);
         height: 90%;
     }
     
     &__pic-wrapper{
-        display: flex;
-        flex-direction: row;
+        @include setFlex(row, none, none);
         margin-top: 3rem;
         height: 75%;
    }
@@ -473,10 +469,8 @@ button{
     }
 
     &__heading-wrapper{
-        display: flex;
         margin-top: 2rem;
-        flex-direction: row;
-        align-items: center;
+        @include setFlex(row, none, center);
         button{
             margin: 0rem 2rem;
         }
@@ -560,9 +554,7 @@ button{
     width: 100%;
     height: 100vh;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include setFlex();
     background-color: $contact-background;
     h2{
         font-size: 2.4rem;
@@ -622,12 +614,13 @@ button{
         top: 0;
         text-align: end;
         padding-top: 5rem;
-        align-items: center;
+        @include setFlex(column, space-between, center)
     }
     
     &__contact-heading{
         margin: 0rem 2rem;
         z-index: 2;
+        @include setFlex();
     }
 
     &__form-container{
@@ -636,16 +629,15 @@ button{
         padding: 5rem;
         margin: 0;
         height: 70%;
-        display: flex;
-        justify-content: center;
         background-color: $white;
         right: 7%;
         top: 50%;
         transform: translateY(-50%);
         z-index: 2;
+        @include setFlex();
         form{
             width: 100%;
-            justify-content: center;
+            @include setFlex(column, center, none);
         }
         input{
             height: 2rem;
@@ -674,6 +666,15 @@ button{
             align-self: center;
             cursor: pointer;
         }
+    }
+    &__textinputs-container{
+        @include setFlex(column, none, none);
+    }
+    &__inputs-wrapper{
+        @include setFlex(row, space-between, none)
+    }
+    &__input-label-wrapper{
+        @include setFlex(column, none, none)
     }
     &__submit-message{
         align-self: center;

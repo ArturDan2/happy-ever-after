@@ -1,20 +1,16 @@
-@use "../../../SCSS/colors.scss" as *;
+@use "../../../SCSS/colors" as *;
+@use "../../../SCSS/mixins" as *;
 
 .work-pattern-page{
     margin: 7rem 10rem;
-    display: flex;
-    flex-direction: column;
     gap: 5rem;
-    align-items: center;
     transform: translateY(20%);
     opacity: 0;
+    @include setFlex();
     &__header-container{
         width: 100%;
-        display: flex;
-        flex-direction: row;
         gap: 5rem;
-        align-items: center;
-        justify-content: space-between;
+        @include setFlex(row, space-between, center);
         h1{
             font-size: 5rem;
             margin: 2rem 0rem;
@@ -25,16 +21,14 @@
     }
     
     &__text{
-        display: flex;
-        flex-direction: column;
+        @include setFlex();
         gap: 1rem;
     }
 
     &__steps{
-        display: flex;
-        flex-direction: column;
         gap: 3rem;
         width: 90%;
+        @include setFlex(column, center, none);
     }
     &__step{
         padding: 2rem;
@@ -45,6 +39,7 @@
         -webkit-box-shadow: 0px 3px 16px -13px rgba(66, 68, 90, 1);
         -moz-box-shadow: 0px 3px 16px -13px rgba(66, 68, 90, 1);
         box-shadow: 0px 3px 16px -13px rgba(66, 68, 90, 1);
+        @include setFlex(column, center, none);
         h2{
             align-self: center;
             font-size: 1.3rem;

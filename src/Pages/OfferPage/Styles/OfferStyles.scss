@@ -1,22 +1,21 @@
-@use "../../../SCSS/colors.scss" as *;
+@use "../../../SCSS/colors" as *;
+@use "../../../SCSS/mixins" as *;
 
 .offer-page{
     margin: 7rem 10rem;
-    display: flex;
-    flex-direction: column;
     gap: 5rem;
     transform: translateY(20%);
     opacity: 0;
+    @include setFlex();
     h1{
         font-size: 5rem;
         align-self: flex-start;
     }
     .offer-option{
-        display: flex;
-        flex-direction: row;
-        gap: 5rem;
         position: relative;
         transition: all 0.5s ease;
+        gap: 5rem;
+        @include setFlex(row, none, none);
         &__picture-container{
             background-color: $work-pattern-secondary;
             width: 40%;
@@ -30,10 +29,8 @@
         }
         &__text-container{
             width: 70%;
-            display: flex;
-            flex-direction: column;
             gap: 1.2rem;
-            justify-content: space-evenly;
+            @include setFlex(column, space-evenly, none);
             h2{
                 font-size: 2.2rem;
                 color: $pg-offer-option-main;
@@ -43,9 +40,7 @@
             }
         }
     &__list-title{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include setFlex(row, none, center);
         button{
             border: none;
             cursor: pointer;
