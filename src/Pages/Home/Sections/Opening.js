@@ -23,9 +23,9 @@ const Opening = () => {
             <img alt="" className="opening__ring" src={ring}></img>
             <img alt="" className="opening__text"src={text}></img>
           </div>
-          <h1 className={`${animated ? "noanim" : "anim" }`}>Organizacja ślubu w Poznaniu</h1>
         </div>
       </div>
+      <h1 className={`${animated ? "noanim" : "anim" }`}>Organizacja ślubu w Poznaniu</h1>
     </section>
   )
 }
