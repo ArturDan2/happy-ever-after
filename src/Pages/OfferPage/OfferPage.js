@@ -13,7 +13,7 @@ const OfferPage = () => {
     return (
     <div className='offer-page slide-in sub-page'>
         <HelmetComponent 
-            title='Oferta usług -  Organizacja ślubów i wesel w Poznaniu | Happy Ever After'
+            title='Oferta -  Organizacja ślubów i wesel w Poznaniu | Happy Ever After'
             description='Poznaj ofertę usług dotyczących organizacji ślubów i wesel na terenie Poznania - 
             Kompleksowa organizacja ślubu i wesela | Częściowa organizacja ślubu i wesela | Koordynacja Dnia Ślubu i Wesela | 
             Typowawanie lokalizacji na przyjęcie weselne'
