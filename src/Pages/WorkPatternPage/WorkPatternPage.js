@@ -1,21 +1,32 @@
 import React from 'react';
+//styles
 import './Styles/WorkPatternStyles.scss';
+//helmet
+import HelmetComponent from '../../SEO/HelmetComponent';
+import ogpic from '../../SEO/og-picture.png';
 
 const WorkPatternPage = () => {
   return (
     <div className='work-pattern-page slide-in sub-page'>
+        <HelmetComponent 
+            title='Jak pracuję? - Organizacja ślubów i wesel w Poznaniu | Happy Ever After'
+            description='Poznaj wzór, którym kieruję się przy organizacji ślubów i wesel. Zapraszam również na niezobowiązujące, bezpłatne spotkanie, na którym się poznamy i przedstawię Wam moją
+            ofertę. Możemy spotkać się osobiście lub online poprzez platformy multimedialne.'
+            type='webstie'
+            img={ogpic}
+        />
         <div className='work-pattern-page__header-container'>
             <h1>Jak pracuję?</h1>
             <div className="work-pattern-page__text">
                 <p>
-                Cieszę się, że trafiliście właśnie do mnie! W mojej pracy cenię sobie swobodę, zorganizowanie i zaufanie.
+                Szukacie organizatora ślubów działającego w Poznaniu i okolicach? Cieszę się, że trafiliście właśnie do mnie! W mojej pracy cenię sobie swobodę, zorganizowanie i zaufanie.
                 Już od samego początku lubię określić plan działania i kroki, jakie podejmiemy podczas przygotowań do
                 Waszego Dnia Ślubu. Wspólnie stworzymy cudowne wydarzenie, które Wy oraz Goście zapamiętacie na
                 długie lata.
                 </p>
                 <p>
                 Zapraszam na niezobowiązujące, bezpłatne spotkanie, na którym się poznamy i przedstawię Wam moją
-                ofertę. Możemy spotkać się osobiście lub online poprzez praformy multimedialne. Pracuję głównie na terenie Poznania i okolic.
+                ofertę. Możemy spotkać się osobiście lub online poprzez platformy multimedialne. Pracuję głównie na terenie Poznania i okolic.
                 </p>
             </div>
         </div>

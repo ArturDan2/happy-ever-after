@@ -7,7 +7,7 @@ export const offers = [
         zyskacie więcej spokoju w czasie organizacji, jak i w Dniu Ślubu. Będę towarzyszyć Wam od początku do końca i pomogę Wam sprawić, 
         aby ten dzień przebiegł bez zakłóceń. Z wielką chęcią przejmę Wasze obowiązki związane z organizacją tego wydarzenia, 
         doradzę i pomogę w podejmowaniu decyzji. Możecie liczyć na moją pomoc od pierwszego spotkania aż do Dnia Wesela. 
-        Będę z Wami przez cały ten czas i dopilnuję wszystkich przygotowań`, 
+        Będę z Wami przez cały ten czas i dopilnuję wszystkich przygotowań. Usługa kompleksowej realizacji ślubu i wesela realizowana jest na terenie Poznania i jego okolic.`, 
         list_title: `Usługa organizacji ślubu i wesela może zawierać`,
         list_items: [`spotkanie, na którym omówimy Wasze oczekiwania i preferencje`, 
                     `ustalenie i nadzór nad budżetem ślubnym`,
@@ -24,7 +24,7 @@ export const offers = [
         paragraph: `Wybór miejsca na przyjęcie weselnego jest jednią z najistotniejszych decyzji do podjęcia podczas
         organizacji ślubu i wesela. Dlatego to właśnie od tego powinniście zacząć przygotowania. Ważne, abyście
         czuli się tam dobrze, aby to miejsce pasowało do koncepcji wesela. Typowanie to może być odrębną
-        usługą lub możecie z niej skorzystać w ramach kompleksowej organizacji ślubu i wesela.`,
+        usługą lub możecie z niej skorzystać w ramach kompleksowej organizacji ślubu i wesela. Typowane przeze mnie lokalizacje na przyjecia weselne znajdują w Poznaniu lub jego okolicach.`,
         list_title: `Usługa typowania lokalizacji na przyjęcie wesela zawiera`,
         list_items: ['spotkanie, na którym omówimy Wasze oczekiwania i preferencje',
                     'wyszukiwanie przez Wedding Plannera miejsc weselnych, które odpowiadają Waszym oczekiwaniom',
@@ -42,7 +42,7 @@ export const offers = [
         kompleksowej organizacji ślubu i wesela. W ramach tej usługi przygotujemy wspólnie scenariusz Dnia
         Ślubu. Będę Wam towarzyszyć od początku porannych przygotowań do późnych godzin nocnych.
         Zadbam o to, abyście w tym wyjątkowym dniu nie musieli się stresować i mogli cieszyć towarzystwem
-        najbliższych.`, 
+        najbliższych. Usługa koordynacji Dnia Ślubu i Wesela realizowana jest na terenie Poznania i jego okolic.`, 
         list_title: `Usługa koordynacji dnia ślubu i wesela zawiera`,
         list_items: [`spotkanie, na którym omówimy Wasze oczekiwania i plan działania`,
                     `przygotowanie oraz omówienie scenariusza Dnia Ślubu`,
@@ -64,7 +64,7 @@ export const offers = [
         title: 'Częściowa organizacja ślubu i wesela',
         paragraph: `Jeśli zorganizowaliście już większość elementów tego ważnego dnia, idealnym rozwiązaniem dla Was
         będzie skorzystanie z usługi częściowej koordynacji ślubu. Wspólnie ustalimy, co już zostało zrobione i
-        zorganizujemy całą resztę.`, 
+        zorganizujemy całą resztę. Usługa częściowej organizacji ślubu i wesela realizowana jest na terenie Poznania i jego okolic.`, 
         list_title: null,
         list_items: [],
         picture: "czesciowa-organizacja.jpg",

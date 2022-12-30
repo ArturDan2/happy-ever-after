@@ -1,4 +1,4 @@
-import { useState, useEffect} from "react";
+import {useEffect} from "react";
 import Home from "./Pages/Home/Home";
 import AboutMePage from "./Pages/AboutMePage/AboutMePage";
 import OfferPage from "./Pages/OfferPage/OfferPage";
@@ -8,7 +8,8 @@ import Nav from "./Nav/Nav";
 import "./GlobalStyles.scss";
 //Router
 import {Routes, Route, useLocation} from "react-router-dom";
-
+//Helmet
+import { HelmetProvider } from "react-helmet-async";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <HelmetProvider>
       <Nav></Nav>
       <Routes>
         <Route path="" element={<Home/>}/>
@@ -32,6 +34,7 @@ function App() {
         <Route path="/jak-pracuje" element={<WorkPatternPage/>}/>
         <Route path="/kontakt" element={<Home/>}/>
       </Routes>
+      </HelmetProvider>
     </div>
   );
 }

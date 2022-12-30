@@ -34,8 +34,8 @@ const ContactForm = ({},ref) => {
                     <h2 className='migra bold'>Skontaktuj się ze mną!</h2>
                 </div>
                 <div className='contact__icons contact__icons--desktop'>
-                    <a target="_blank" href="https://www.instagram.com/happyeverafter_wedding/?igshid=YmMyMTA2M2Y%3D"><img src={insta}></img></a>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100087017143733"><img src={facebook}></img></a>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/happyeverafter_wedding/?igshid=YmMyMTA2M2Y%3D"><img alt="ikona instagram" src={insta}></img></a>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/profile.php?id=100087017143733"><img alt="ikona facebook" src={facebook}></img></a>
                 </div>
             </div>
         </div>
@@ -71,8 +71,8 @@ const ContactForm = ({},ref) => {
             </form>
         </div>
         <div className='contact__icons contact__icons--mobile'>
-            <a target="_blank" href="https://www.instagram.com/happyeverafter_wedding/?igshid=YmMyMTA2M2Y%3D"><img alt="Ikona przedstawiająca logo Instagrama" src={insta}></img></a>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100087017143733"><img alt="Ikona przedstawiająca logo Facebooka" src={facebook}></img></a>
+            <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/happyeverafter_wedding/?igshid=YmMyMTA2M2Y%3D"><img alt="Ikona przedstawiająca logo Instagrama" src={insta}></img></a>
+            <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/profile.php?id=100087017143733"><img alt="Ikona przedstawiająca logo Facebooka" src={facebook}></img></a>
         </div>
         <adress className="contact__bottom-contact">
             <a href="tel:+48 662-331-337">+48 662-331-337</a>

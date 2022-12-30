@@ -6,7 +6,11 @@ import Offer from './Sections/Offer';
 import MyStyle from './Sections/MyStyle';
 import MyWorkPattern from './Sections/MyWorkPattern';
 import ContactForm from './Sections/ContactForm';
+//router
 import { useLocation } from 'react-router-dom';
+//helmet
+import HelmetComponent from '../../SEO/HelmetComponent';
+import ogpic from '../../SEO/og-picture.png';
 
 
 
@@ -19,9 +23,14 @@ const Home = () => {
       window.scroll({ top: (contactRef.current.offsetTop), left: 0, behavior: 'smooth' })
     }
   },[pathname])
-  
   return (
     <div className='home-container'>
+      <HelmetComponent 
+            title='Happy Ever After - Organizacja ślubów i wesel w Poznaniu'
+            description='Organizacja ślubów na terenie Poznania i okolic. Skorzystaj z usługi kompleksowej lub częściowej organizacji ślubu z pomocą wedding plannera.'
+            type='webstie'
+            img={ogpic}
+      />
       <Opening></Opening>
       <AboutMe></AboutMe>
       <Offer></Offer>
