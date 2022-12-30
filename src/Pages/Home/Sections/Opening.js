@@ -25,7 +25,7 @@ const Opening = () => {
           </div>
         </div>
       </div>
-      <h1 className={`${animated ? "noanim" : "anim" }`}>Organizacja ślubu w Poznaniu</h1>
+      <h1 className={`${animated ? "noanim" : "anim" }`}>Organizacja ślubów w Poznaniu</h1>
     </section>
   )
 }

@@ -38,8 +38,7 @@ button{
         position: sticky;
         width: fit-content;
         bottom: 5rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        align-self: center;
         color: none;
         padding: 0.5rem 1rem;
         color: $white;
@@ -155,8 +154,8 @@ button{
     }
     
     @keyframes text-anim {
-        0%   {opacity: 0; transform: scale(0.9), translate(-50%)}
-        100%  {opacity: 1; transform: scale(1), translateY(-50%)}
+        0%   {opacity: 0; transform: scale(0.9)}
+        100%  {opacity: 1; transform: scale(1)}
     }
 
     @keyframes background-anim {
@@ -193,6 +192,7 @@ button{
     }
 
     @media (max-width: 800px) {
+        margin-top: -5.3rem;
         h2{
             font-size: 3.5rem;
         }
