@@ -29,7 +29,7 @@ const Home = () => {
             title='Happy Ever After - Organizacja ślubów i wesel w Poznaniu'
             description='Organizacja ślubów na terenie Poznania i okolic. Skorzystaj z usługi kompleksowej lub częściowej organizacji ślubu z pomocą wedding plannera.'
             type='webstie'
-            img={ogpic}
+            img={`${window.location.origin + ogpic}`}
       />
       <Opening></Opening>
       <AboutMe></AboutMe>

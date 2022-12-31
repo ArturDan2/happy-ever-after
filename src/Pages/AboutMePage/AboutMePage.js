@@ -9,6 +9,7 @@ import ogpic from '../../SEO/og-picture.png';
 
 
 const AboutMePage = () => {
+
   return (
     <div className='about-me-page slide-in sub-page'>
         <HelmetComponent 
@@ -16,7 +17,7 @@ const AboutMePage = () => {
             description='Jestem certyfikowaną organizatorką ślubów i wesel pracującą na terenie Poznania i okolic.
             Organizacja wydarzeń jest moją pasją, a towarzyszenie Wam na drodze do upragnionego Happy Ever After będzie moim zaszczytem.'
             type='webstie'
-            img={ogpic}
+            img={`${window.location.origin + ogpic}`}
         />
         <div className="about-me-page__header-container">
             <h1 className='about-me-page__heading'>Kim jestem?</h1>
