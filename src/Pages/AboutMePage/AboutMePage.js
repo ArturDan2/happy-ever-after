@@ -17,7 +17,7 @@ const AboutMePage = () => {
             description='Jestem certyfikowaną organizatorką ślubów i wesel pracującą na terenie Poznania i okolic.
             Organizacja wydarzeń jest moją pasją, a towarzyszenie Wam na drodze do upragnionego Happy Ever After będzie moim zaszczytem.'
             type='webstie'
-            img={`${window.location.origin + ogpic}`}
+            img={ogpic}
         />
         <div className="about-me-page__header-container">
             <h1 className='about-me-page__heading'>Kim jestem?</h1>

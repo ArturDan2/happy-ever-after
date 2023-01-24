@@ -18,7 +18,7 @@ const OfferPage = () => {
             Kompleksowa organizacja ślubu i wesela | Częściowa organizacja ślubu i wesela | Koordynacja Dnia Ślubu i Wesela | 
             Typowawanie lokalizacji na przyjęcie weselne'
             type='webstie'
-            img={`${window.location.origin + ogpic}`}
+            img={ogpic}
         />
         <h1 className="offer-page__heading">Oferta</h1>
         {offers.map((offer)=>{

@@ -13,7 +13,7 @@ const WorkPatternPage = () => {
             description='Poznaj wzór, którym kieruję się przy organizacji ślubów i wesel. Zapraszam również na niezobowiązujące, bezpłatne spotkanie, na którym się poznamy i przedstawię Wam moją
             ofertę. Możemy spotkać się osobiście lub online poprzez platformy multimedialne.'
             type='webstie'
-            img={`${window.location.origin + ogpic}`}
+            img={ogpic}
         />
         <div className='work-pattern-page__header-container'>
             <h1>Jak pracuję?</h1>

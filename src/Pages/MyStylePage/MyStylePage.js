@@ -28,7 +28,7 @@ const MyStylePage = () => {
             title='Mój styl - Organizacja ślubów i wesel w Poznaniu | Happy Ever After'
             description='Sprawdź porcję zdjęć, która pozwoli Ci zrozumieć w jakiej stylistyce czuję się najlepiej oeganizując wesela i śluby.'
             type='webstie'
-            img={`${window.location.origin + ogpic}`}
+            img={ogpic}
         />
         <div className='my-style-page__header-container'>
             <h1>Mój styl</h1>
