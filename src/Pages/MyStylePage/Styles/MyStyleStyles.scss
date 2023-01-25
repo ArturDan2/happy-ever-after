@@ -1,30 +1,30 @@
-@use "../../../SCSS/mixins.scss" as *; 
+@use "../../../SCSS/mixins.scss" as *;
 
-.my-style-page{
+.my-style-page {
   margin: 0rem 10rem 7rem 10rem;
   transform: translateY(20%);
   opacity: 0;
   @include setFlex();
-  &__header-container{
+  &__header-container {
     width: 100%;
     gap: 5rem;
     @include setFlex(row, space-between, center);
-    h1{
-        font-size: 5rem;
-        margin: 2rem 0rem;
+    h1 {
+      font-size: 5rem;
+      margin: 2rem 0rem;
     }
-    p{
-        text-align: justify;
-        line-height: 1.5rem;
+    p {
+      text-align: justify;
+      line-height: 1.5rem;
     }
-}
+  }
 
-  &__pins{
+  &__pins {
     width: 100%;
     flex-wrap: wrap;
     @include setFlex(none);
   }
-  &__instax{ 
+  &__instax {
     margin: 1rem;
     -webkit-box-shadow: 0px 12px 21px -20px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 12px 21px -20px rgba(66, 68, 90, 1);
@@ -32,48 +32,50 @@
     cursor: pointer;
     transition: all 0.2s ease;
   }
-  &__instax:hover{
+  &__instax:hover {
     transform: scale(1.02);
-    box-shadow: 0px 13px 22px -18px rgba(66, 68, 90, 1);;
+    box-shadow: 0px 13px 22px -18px rgba(66, 68, 90, 1);
   }
   [class*="embed_pin"] {
     padding: 1rem;
     background-color: white;
     border: none;
   }
-  
-  [class*="page"] {
-    min-height: 30rem;
-  }
 
   [class*="page"] {
     min-height: 30rem;
   }
 
-  @media (max-width: 1050px){
+  [class*="page"] {
+    min-height: 30rem;
+  }
+
+  @media (max-width: 1050px) {
     margin: 10rem 4rem;
-    &__header-container{
-        gap: 6rem;
+    &__header-container {
+      gap: 6rem;
     }
   }
-  @media (max-width: 950px){
-      &_header-container{
-          gap: 3rem;
-          h1{font-size: 4rem;}
+  @media (max-width: 950px) {
+    &_header-container {
+      gap: 3rem;
+      h1 {
+        font-size: 4rem;
       }
+    }
   }
-  @media (max-width: 700px){
-      &__header-container{
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 1rem;
-      }
+  @media (max-width: 700px) {
+    &__header-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
   }
 
-  @media (max-width: 500px){
-      margin: 6rem 2rem;
+  @media (max-width: 500px) {
+    margin: 6rem 2rem;
   }
-  @media (max-width: 400px){
-      margin: 5rem 1rem;
+  @media (max-width: 400px) {
+    margin: 5rem 1rem;
   }
 }
