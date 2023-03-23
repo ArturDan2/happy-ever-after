@@ -1,33 +1,43 @@
-import React,{useEffect, useRef} from 'react'
-import twigs from '../../../images/logo-warstwy/galazki.png';
+import React, { useEffect, useRef } from "react";
+import twigs from "../../../images/logo-warstwy/galazki.png";
 import ring from "../../../images/logo-warstwy/obraczki.png";
 import text from "../../../images/logo-warstwy/napis.png";
 
 const Opening = () => {
-
   const animated = !!sessionStorage.getItem("animated");
-  const picRef = useRef()
-  useEffect(()=> {
+  const picRef = useRef();
+  useEffect(() => {
     if (animated === false) {
       sessionStorage.setItem("animated", true);
-    };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <section className="flex-col opening">
-      <div ref={picRef} className={`opening__background ${animated ? "opening__background--noanim" : "opening__background--anim" }`}>
+      <div
+        ref={picRef}
+        className={`opening__background ${
+          animated ? "opening__background--noanim" : "opening__background--anim"
+        }`}
+      >
         <div className="opening__logo-layer">
-          <div className={`opening__logo-container ${animated ? "noanim" : "anim" }`}>
+          <div
+            className={`opening__logo-container ${
+              animated ? "noanim" : "anim"
+            }`}
+          >
             <img alt="" className="opening__twigs" src={twigs}></img>
             <img alt="" className="opening__ring" src={ring}></img>
-            <img alt="" className="opening__text"src={text}></img>
+            <img alt="" className="opening__text" src={text}></img>
           </div>
         </div>
       </div>
-      <h1 className={`${animated ? "noanim" : "anim" }`}>Organizacja ślubów w Poznaniu</h1>
+      <h1 className={`${animated ? "noanim" : "anim"}`}>
+        Organizacja ślubów w Wielkopolsce
+      </h1>
     </section>
-  )
-}
+  );
+};
 
-export default Opening
+export default Opening;

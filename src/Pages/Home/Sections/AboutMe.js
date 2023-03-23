@@ -12,7 +12,7 @@ const AboutMe = () => {
       <div className="about-me__text-container">
         <h2 className="about-me__heading migra bold">O mnie</h2>
         <p className="about-me__p">
-          Jestem organizatorką ślubów pracującą na terenie Poznania i okolic.
+          Jestem organizatorką ślubów pracującą na terenie Wielkopolski.
           Połączenie mojej romantycznej duszy ze skłonnością do perfekcyjnego
           planowania wszystkiego z najdrobniejszymi szczegółami sprawia, że mogę
           z dumą powiedzieć, iż jestem dobra w tym, co robię. Otaczanie się

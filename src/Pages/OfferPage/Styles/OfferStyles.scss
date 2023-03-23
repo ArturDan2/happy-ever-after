@@ -1,159 +1,154 @@
 @use "../../../SCSS/colors" as *;
 @use "../../../SCSS/mixins" as *;
 
-.offer-page{
-    margin: 7rem 10rem;
+.offer-page {
+  margin: 7rem 10rem;
+  gap: 5rem;
+  transform: translateY(20%);
+  opacity: 0;
+  @include setFlex();
+  h1 {
+    font-size: 5rem;
+    align-self: flex-start;
+  }
+  .offer-option {
+    position: relative;
+    transition: all 0.5s ease;
     gap: 5rem;
-    transform: translateY(20%);
-    opacity: 0;
-    @include setFlex();
-    h1{
-        font-size: 5rem;
-        align-self: flex-start;
-    }
-    .offer-option{
-        position: relative;
-        transition: all 0.5s ease;
-        gap: 5rem;
-        @include setFlex(row, none, none);
-        &__picture-container{
-            background-color: $work-pattern-secondary;
-            width: 40%;
-            height: 20rem;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: 0% 85%;
-            }
-        }
-        &__text-container{
-            width: 70%;
-            gap: 1.2rem;
-            @include setFlex(column, space-evenly, none);
-            h2{
-                font-size: 2.2rem;
-                color: $pg-offer-option-main;
-            }
-            p{
-                line-height: 1.5rem;
-            }
-        }
-    &__list-title{
-        @include setFlex(row, none, center);
-        button{
-            border: none;
-            cursor: pointer;
-        }
-    }
-
-    &__expand-button{
-        position: relative;
-        background-color: $pg-offer-expand-btn;
-        margin: 0rem 1.2rem;
-        transform: scale(0.9);
-        .left-bar{
-            width: 15px;
-            height: 2px;
-            background-color: $white;
-            position: absolute;
-            top: center;
-            left: center;
-            transform: translate(-90%,-50%) rotate(25deg);
-            transition: all 0.2s ease;
-        }
-
-        .right-bar{
-            width: 15px;
-            height: 2px;
-            background-color: $white;
-            position: absolute;
-            top: center;
-            left: center;
-            transform: translate(-4%,-50%) rotate(-25deg);
-            transition: all 0.2s ease;
-        }
-    }
-
-    &__expand-button.expanded{
-        .left-bar{
-            transform: translate(-90%,-50%) rotate(-25deg)
-        }
-        .right-bar{
-            transform: translate(-4%,-50%) rotate(25deg);
-        }
-    }
-
-    &__expandable-list{
+    @include setFlex(row, none, none);
+    &__picture-container {
+      background-color: $work-pattern-secondary;
+      width: 40%;
+      height: 20rem;
+      img {
+        width: 100%;
         height: 100%;
-        li{
-            padding: 0.5rem;
-            color: $pg-offer-li;
-            list-style: disc;
-            margin-left: 1.5rem;
+        object-fit: cover;
+        object-position: 0% 85%;
+      }
+    }
+    &__text-container {
+      width: 70%;
+      gap: 1.2rem;
+      @include setFlex(column, space-evenly, none);
+      h2 {
+        font-size: 2.2rem;
+        color: $pg-offer-option-main;
+      }
+      p {
+        line-height: 1.5rem;
+      }
+    }
+    &__list-title {
+      @include setFlex(row, none, center);
+      button {
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    &__expand-button {
+      position: relative;
+      background-color: $pg-offer-expand-btn;
+      margin: 0rem 1.2rem;
+      transform: scale(0.9);
+      .left-bar {
+        width: 15px;
+        height: 2px;
+        background-color: $white;
+        position: absolute;
+        top: center;
+        left: center;
+        transform: translate(-90%, -50%) rotate(25deg);
+        transition: all 0.2s ease;
+      }
+
+      .right-bar {
+        width: 15px;
+        height: 2px;
+        background-color: $white;
+        position: absolute;
+        top: center;
+        left: center;
+        transform: translate(-4%, -50%) rotate(-25deg);
+        transition: all 0.2s ease;
+      }
+    }
+
+    &__expand-button.expanded {
+      .left-bar {
+        transform: translate(-90%, -50%) rotate(-25deg);
+      }
+      .right-bar {
+        transform: translate(-4%, -50%) rotate(25deg);
+      }
+    }
+
+    &__expandable-list {
+      height: 100%;
+      li {
+        padding: 0.5rem;
+        color: $pg-offer-li;
+        list-style: disc;
+        margin-left: 1.5rem;
+      }
+    }
+    &__expandable-list.unexpanded {
+      font-size: 0;
+      margin: 0;
+      opacity: 0;
+      padding: 0;
+      max-height: 0;
+      transition: opacity 0.25s, margin 0.5s 0.25s, font-size 0.5s 0.25s,
+        padding 0.5s 0.25s, max-height 0.7s;
+    }
+    &__expandable-list.expanded {
+      font-size: 16px;
+      opacity: 1;
+      height: auto;
+      padding: 5px 0;
+      max-height: 35rem;
+      /* grow, then fade in */
+      transition: margin 0.25s, padding 0.25s, font-size 0.25s,
+        opacity 0.5s 0.25s, max-height 0.7s;
+    }
+  }
+  @media (max-width: 1150px) {
+    margin: 10rem 4rem;
+  }
+  @media (max-width: 1000px) {
+    margin: 10rem 2rem;
+    .offer-option {
+      gap: 3rem;
+      &__text-container {
+        h2 {
+          font-size: 2rem;
         }
-    }
-    &__expandable-list.unexpanded{
-        font-size: 0;
-        margin: 0;
-        opacity: 0;
-        padding: 0;
-        max-height: 0;
-        transition: 
-            opacity .25s, 
-            margin .5s 0.25s, 
-            font-size .5s 0.25s, 
-            padding .5s .25s,
-            max-height .7s;
-    }
-    &__expandable-list.expanded{
-        font-size: 16px;
-        opacity: 1;
-        height: auto;
-        padding: 5px 0;
-        max-height: 35rem;
-        /* grow, then fade in */
-        transition:   
-          margin .25s,
-          padding .25s,
-          font-size .25s,
-          opacity .5s .25s,
-          max-height .7s;
-    }
-    }
-    @media (max-width: 1150px){
-        margin: 10rem 4rem;
-    }
-    @media (max-width: 1000px){
-        margin: 10rem 2rem;
-        .offer-option{
-            gap: 3rem;
-            &__text-container{
-                h2{
-                    font-size: 2rem;
-                }
-                p{
-                    line-height: 1.4rem;
-                }
-            }
+        p {
+          line-height: 1.4rem;
         }
+      }
     }
-    @media (max-width: 1000px){
-        margin: 10rem 4rem;
-        .offer-option{
-            flex-direction: column;
-            &__text-container{
-                width: 100%;
-            }
-            &__picture-container{
-                width: 100%;
-            }
+  }
+  @media (max-width: 1000px) {
+    margin: 10rem 4rem;
+    .offer-option {
+      flex-direction: column;
+      &__text-container {
+        width: 100%;
+      }
+      &__picture-container {
+        width: 100%;
+        img {
+          object-position: 0% 50%;
         }
+      }
     }
-    @media (max-width: 550px){
-        margin: 10rem 2rem;
-    }
-    @media (max-width: 370px){
-        margin: 10rem 1rem;
-    }
+  }
+  @media (max-width: 550px) {
+    margin: 10rem 2rem;
+  }
+  @media (max-width: 370px) {
+    margin: 10rem 1rem;
+  }
 }

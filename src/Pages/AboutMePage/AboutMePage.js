@@ -28,13 +28,12 @@ const AboutMePage = () => {
       <div className="about-me-page__text">
         <p>
           Przede wszystkim, jestem organizatorką ślubów pracującą na terenie
-          Poznania i okolic. Myśl o zastaniu Wedding Plannerką zrodziła się w
-          mojej głowie już w liceum, kiedy to towarzyszyłam siostrze w
-          organizacji jej wesela. Później przygotowywanie tego typu wydarzeń
-          przerodziło się w pasję i pomysł na przyszły zawód. Dzisiaj już jako
-          certyfikowana organizatorka ślubów i wesel mogę powiedzieć, że z
-          nieśmiałego kiedyś marzenia nastolatki zrodziło się coś naprawdę
-          poważnego i pięknego.
+          Wielkopolski. Myśl o zastaniu Wedding Plannerką zrodziła się w mojej
+          głowie już w liceum, kiedy to towarzyszyłam siostrze w organizacji jej
+          wesela. Później przygotowywanie tego typu wydarzeń przerodziło się w
+          pasję i pomysł na przyszły zawód. Dzisiaj już jako certyfikowana
+          organizatorka ślubów i wesel mogę powiedzieć, że z nieśmiałego kiedyś
+          marzenia nastolatki zrodziło się coś naprawdę poważnego i pięknego.
         </p>
         <p>
           Połączenie mojej romantycznej duszy ze skłonnością do perfekcyjnego

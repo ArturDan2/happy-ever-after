@@ -21,14 +21,14 @@ const MyWorkPattern = () => {
       <div className="flex-col work-pattern__text-container">
         <h2 className="work-pattern__heading migra bold">Jak pracuję?</h2>
         <p className="work-pattern__p">
-          Szukacie organizatora ślubów działającego w Poznaniu i okolicach?
-          Cieszę się, że trafiliście właśnie do mnie! Już od samego początku
-          lubię określić plan działania i kroki, jakie podejmiemy podczas
-          przygotowań do Waszego Dnia Ślubu. Wspólnie stworzymy cudowne
-          wydarzenie, które Wy oraz Goście zapamiętacie na długie lata.
-          Zapraszam na niezobowiązujące, bezpłatne spotkanie, na którym się
-          poznamy i przedstawię Wam moją ofertę. Możemy spotkać się osobiście w
-          Poznaniu lub online poprzez platformy multimedialne.
+          Szukacie organizatora ślubów działającego w Wielkopolsce? Cieszę się,
+          że trafiliście właśnie do mnie! Już od samego początku lubię określić
+          plan działania i kroki, jakie podejmiemy podczas przygotowań do
+          Waszego Dnia Ślubu. Wspólnie stworzymy cudowne wydarzenie, które Wy
+          oraz Goście zapamiętacie na długie lata. Zapraszam na
+          niezobowiązujące, bezpłatne spotkanie, na którym się poznamy i
+          przedstawię Wam moją ofertę. Możemy spotkać się osobiście na terenie
+          Wielkopolski lub online poprzez platformy multimedialne.
         </p>
         <Link to={"/jak-pracuje"}>
           <button>Dowiedz się więcej</button>

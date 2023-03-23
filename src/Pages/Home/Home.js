@@ -28,7 +28,7 @@ const Home = () => {
     <div className="home-container">
       <HelmetComponent
         title="Happy Ever After - Organizacja ślubów i wesel w Poznaniu"
-        description="Organizacja ślubów na terenie Poznania i okolic. Skorzystaj z usługi kompleksowej lub częściowej organizacji ślubu z pomocą wedding plannera."
+        description="Organizacja ślubów na terenie Wielkopolski. Skorzystaj z usługi kompleksowej lub częściowej organizacji ślubu z pomocą wedding plannera."
         type="webstie"
         img={ogpic}
       />
