@@ -14,7 +14,7 @@ const MyStyle = () => {
             <LazyLoadImage
               effect="blur"
               src={mystyle1}
-              alt="Para nowożeńców na tle zachodzącego słońca."
+              alt="Dłonie pary młodej na tle bukietu kwiatów, wraz z wyeksponowanymi obrączkami."
               width="100%"
               height="100%"
             />
@@ -23,7 +23,7 @@ const MyStyle = () => {
             <LazyLoadImage
               effect="blur"
               src={mystyle2}
-              alt="Dłonie pary młodej na tle bukietu kwiatów, wraz z wyeksponowanymi obrączkami."
+              alt="Panna młoda z bukietem i parasolką."
               width="100%"
               height="100%"
             />
